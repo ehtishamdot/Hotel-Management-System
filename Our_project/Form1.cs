@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Our_project
 {
-    public partial class Form1 : Form
+    public partial class Signin : Form
     {
-        public Form1()
+        public Signin()
         {
             InitializeComponent();
         }

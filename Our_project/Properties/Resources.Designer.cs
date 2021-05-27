@@ -63,6 +63,16 @@ namespace Our_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cafe_icon {
+            get {
+                object obj = ResourceManager.GetObject("cafe icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap email_icon {
             get {
                 object obj = ResourceManager.GetObject("email icon", resourceCulture);
@@ -96,6 +106,16 @@ namespace Our_project.Properties {
         internal static System.Drawing.Bitmap our_final_logo {
             get {
                 object obj = ResourceManager.GetObject("our final logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stay_icon {
+            get {
+                object obj = ResourceManager.GetObject("stay icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
