@@ -1,0 +1,16 @@
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\bin\Debug\Our_project.exe
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\bin\Debug\Our_project.pdb
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\obj\x86\Debug\Our_project.Form1.resources
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\obj\x86\Debug\Our_project.Properties.Resources.resources
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\obj\x86\Debug\Our_project.csproj.GenerateResource.Cache
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\obj\x86\Debug\Our_project.exe
+c:\users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_project\obj\x86\Debug\Our_project.pdb
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\bin\Debug\Our_project.exe
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\bin\Debug\Our_project.pdb
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.csprojAssemblyReference.cache
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.Form1.resources
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.Properties.Resources.resources
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.csproj.GenerateResource.cache
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.csproj.CoreCompileInputs.cache
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.exe
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Our_project\obj\x86\Debug\Our_project.pdb
