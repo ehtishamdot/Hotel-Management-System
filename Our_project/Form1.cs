@@ -16,19 +16,28 @@ namespace Our_project
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+ 
+
+        private void textBox1_Click(object sender, EventArgs e)
         {
+            textBox1.Clear();
            
-                
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+          // panel18.ForeColor = Color.FromArgb(43, 34, 54);
+         //  textBox3.ForeColor = Color.FromArgb(43, 34, 54);
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void textBox2_Click(object sender, EventArgs e)
         {
+            textBox2.Clear();
+            textBox2.UseSystemPasswordChar = true;
+
+        }
+
+        private void textBox3_Click(object sender, EventArgs e)
+        {
+
+            textBox3.Clear();
 
         }
 
@@ -37,19 +46,16 @@ namespace Our_project
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void exit_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
