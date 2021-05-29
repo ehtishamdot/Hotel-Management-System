@@ -23,28 +23,10 @@ namespace Our_project
 
         string userid;
         string pass;
-
-        private void Loginin_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void username_TextChanged(object sender, EventArgs e)
-        {
-            
-        }  
-        private void username_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
-        private void password_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
+       
         private void register_Click(object sender, EventArgs e)
         {
+            
             Signin sign = new Signin();
             sign.Show();
         }
@@ -53,18 +35,15 @@ namespace Our_project
         {
             this.Close();
         }
-        
-        
-
+               
         private void username_MouseClick(object sender, MouseEventArgs e)
         {
             username.Clear();
+            panel5.BackColor = Color.Blue;
+            panel5.ForeColor = Color.Blue;
         }
 
-        private void Sign_MouseClick(object sender, MouseEventArgs e)
-        {
-            
-        }
+ 
         private void Sign_Click(object sender, EventArgs e)
         {
                        
@@ -92,6 +71,8 @@ namespace Our_project
         {
             password.Clear();
             password.UseSystemPasswordChar = true;
+            panel6.BackColor = Color.Blue;
+            panel6.ForeColor = Color.Blue;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -107,9 +88,14 @@ namespace Our_project
                        
         }
 
-        private void checkBox1_MouseEnter(object sender, EventArgs e)
+        private void register_MouseHover(object sender, EventArgs e)
         {
-          
+            register.BackColor = Color.LightGray;
+        }
+
+        private void register_MouseLeave(object sender, EventArgs e)
+        {
+            register.BackColor = Color.White;
         }
     }
     

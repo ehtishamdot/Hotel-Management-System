@@ -43,7 +43,7 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -59,7 +59,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -84,9 +83,12 @@
             // 
             this.Sign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
             this.Sign.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sign.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Sign.FlatAppearance.BorderSize = 0;
+            this.Sign.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Sign.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sign.ForeColor = System.Drawing.Color.White;
-            this.Sign.Location = new System.Drawing.Point(24, 443);
+            this.Sign.Location = new System.Drawing.Point(24, 429);
             this.Sign.Name = "Sign";
             this.Sign.Size = new System.Drawing.Size(306, 54);
             this.Sign.TabIndex = 9;
@@ -102,7 +104,7 @@
             this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(129, 519);
+            this.exit.Location = new System.Drawing.Point(128, 496);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(90, 49);
             this.exit.TabIndex = 10;
@@ -122,7 +124,6 @@
             this.txt_sign_username.TabStop = false;
             this.txt_sign_username.Text = "Username";
             this.txt_sign_username.Click += new System.EventHandler(this.textBox1_Click);
-            this.txt_sign_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
             // 
@@ -153,7 +154,6 @@
             this.txt_sign_password.TabStop = false;
             this.txt_sign_password.Text = "Password";
             this.txt_sign_password.Click += new System.EventHandler(this.textBox2_Click);
-            this.txt_sign_password.TextChanged += new System.EventHandler(this.txt_sign_password_TextChanged);
             // 
             // panel7
             // 
@@ -204,27 +204,27 @@
             this.pictureBox.TabIndex = 20;
             this.pictureBox.TabStop = false;
             // 
-            // checkBox1
+            // checkBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.White;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F);
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Location = new System.Drawing.Point(220, 327);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 19);
-            this.checkBox1.TabIndex = 41;
-            this.checkBox1.Text = "ShowPassword";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox.AutoSize = true;
+            this.checkBox.BackColor = System.Drawing.Color.White;
+            this.checkBox.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.checkBox.Location = new System.Drawing.Point(220, 327);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(113, 19);
+            this.checkBox.TabIndex = 41;
+            this.checkBox.Text = "ShowPassword";
+            this.checkBox.UseVisualStyleBackColor = false;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Signin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(356, 580);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(356, 557);
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.textBox3);
@@ -247,7 +247,6 @@
             this.Name = "Signin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hotel Management System";
-            this.Load += new System.EventHandler(this.Signin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -273,7 +272,7 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }
 

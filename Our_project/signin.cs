@@ -15,17 +15,15 @@ namespace Our_project
         public Signin()
         {
             InitializeComponent();
-      
-        }
+            
 
-        
-
-       
-      
+        }           
+     
         private void Sign_Click(object sender, EventArgs e)
         {
             Login login = new Login(txt_sign_username.Text,txt_sign_password.Text);
             login.Show();
+            
 
         }
         private void textBox1_Click(object sender, EventArgs e)
@@ -48,21 +46,10 @@ namespace Our_project
         private void textBox3_Click(object sender, EventArgs e)
         {
 
-            textBox3.Clear();
-            textBox3.BackgroundImage = Properties.Resources.email_icon;            
+            textBox3.Clear();          
             panel18.BackColor = Color.Blue;
             panel18.ForeColor = Color.Blue;
            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void exit_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void exit_Click_1(object sender, EventArgs e)
@@ -82,37 +69,20 @@ namespace Our_project
             Sign.ForeColor = Color.White;
         }
 
-        private void Signin_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_sign_password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
+            if (checkBox.Checked == false)
             {
                 txt_sign_password.UseSystemPasswordChar = true;
             }
-            if (checkBox1.Checked == true)
+            if (checkBox.Checked == true)
             {
                 txt_sign_password.UseSystemPasswordChar = false;
             }
         }
 
-        private void register_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
     
 }

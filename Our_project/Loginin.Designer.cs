@@ -68,7 +68,6 @@ namespace Our_project
             this.password.TabIndex = 35;
             this.password.Text = "Password";
             this.password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.password_MouseClick);
-            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // panel7
             // 
@@ -97,7 +96,6 @@ namespace Our_project
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             this.username.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_MouseClick);
-            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // panel4
             // 
@@ -167,6 +165,8 @@ namespace Our_project
             this.register.Text = "Clicl here to Register";
             this.register.UseVisualStyleBackColor = false;
             this.register.Click += new System.EventHandler(this.register_Click);
+            this.register.MouseLeave += new System.EventHandler(this.register_MouseLeave);
+            this.register.MouseHover += new System.EventHandler(this.register_MouseHover);
             // 
             // Sign
             // 
@@ -181,7 +181,6 @@ namespace Our_project
             this.Sign.Text = "Login In";
             this.Sign.UseVisualStyleBackColor = false;
             this.Sign.Click += new System.EventHandler(this.Sign_Click);
-            this.Sign.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Sign_MouseClick);
             // 
             // exit
             // 
@@ -208,7 +207,6 @@ namespace Our_project
             this.checkBox1.Text = "ShowPassword";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            this.checkBox1.MouseEnter += new System.EventHandler(this.checkBox1_MouseEnter);
             // 
             // Login
             // 
@@ -234,7 +232,6 @@ namespace Our_project
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Loginin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
