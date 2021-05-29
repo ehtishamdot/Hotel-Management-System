@@ -41,7 +41,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.checkBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -124,6 +124,7 @@
             this.txt_sign_username.TabStop = false;
             this.txt_sign_username.Text = "Username";
             this.txt_sign_username.Click += new System.EventHandler(this.textBox1_Click);
+            this.txt_sign_username.Leave += new System.EventHandler(this.txt_sign_username_Leave);
             // 
             // panel1
             // 
@@ -154,6 +155,7 @@
             this.txt_sign_password.TabStop = false;
             this.txt_sign_password.Text = "Password";
             this.txt_sign_password.Click += new System.EventHandler(this.textBox2_Click);
+            this.txt_sign_password.Leave += new System.EventHandler(this.txt_sign_password_Leave);
             // 
             // panel7
             // 
@@ -181,18 +183,19 @@
             this.panel18.Size = new System.Drawing.Size(306, 2);
             this.panel18.TabIndex = 22;
             // 
-            // textBox3
+            // email
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.HideSelection = false;
-            this.textBox3.Location = new System.Drawing.Point(74, 372);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 19);
-            this.textBox3.TabIndex = 21;
-            this.textBox3.TabStop = false;
-            this.textBox3.Text = "Email";
-            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
+            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.HideSelection = false;
+            this.email.Location = new System.Drawing.Point(74, 372);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(256, 19);
+            this.email.TabIndex = 21;
+            this.email.TabStop = false;
+            this.email.Text = "Email";
+            this.email.Click += new System.EventHandler(this.textBox3_Click);
+            this.email.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // pictureBox
             // 
@@ -227,7 +230,7 @@
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel18);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.email);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txt_sign_password);
@@ -270,7 +273,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.CheckBox checkBox;
     }

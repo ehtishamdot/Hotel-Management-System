@@ -68,6 +68,7 @@ namespace Our_project
             this.password.TabIndex = 35;
             this.password.Text = "Password";
             this.password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.password_MouseClick);
+            this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
             // panel7
             // 
@@ -96,6 +97,7 @@ namespace Our_project
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             this.username.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_MouseClick);
+            this.username.Leave += new System.EventHandler(this.username_Leave);
             // 
             // panel4
             // 

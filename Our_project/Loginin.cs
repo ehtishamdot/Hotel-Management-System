@@ -40,10 +40,25 @@ namespace Our_project
         {
             username.Clear();
             panel5.BackColor = Color.Blue;
-            panel5.ForeColor = Color.Blue;
+        }
+        private void username_Leave(object sender, EventArgs e)
+        {
+            panel5.BackColor = Color.Black;
+            username.Text = "Username";
+        }
+        private void password_MouseClick(object sender, MouseEventArgs e)
+        {
+            password.Clear();
+            password.UseSystemPasswordChar = true;
+            panel6.BackColor = Color.Blue;
         }
 
- 
+        private void password_Leave(object sender, EventArgs e)
+        {
+            panel6.BackColor = Color.Black;
+            password.Text = "Password";
+        }
+
         private void Sign_Click(object sender, EventArgs e)
         {
                        
@@ -67,13 +82,7 @@ namespace Our_project
          
         }
 
-        private void password_MouseClick(object sender, MouseEventArgs e)
-        {
-            password.Clear();
-            password.UseSystemPasswordChar = true;
-            panel6.BackColor = Color.Blue;
-            panel6.ForeColor = Color.Blue;
-        }
+      
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -97,6 +106,8 @@ namespace Our_project
         {
             register.BackColor = Color.White;
         }
+
+
     }
     
 }
