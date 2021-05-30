@@ -25,13 +25,11 @@ namespace Our_project
                "Russian Salad",
                "Chicken stick boti"
                              };
-            MessageBox.Show(starters.Text);
+         
         }
-
-
-        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void maincourse_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox3.Items.Add("Main Course:");
+            maincourse.Items.Add("Main Course:");
             string[] items = {
                "Chicken Malai Handi" ,
                "Mutton Rogan Josh",
@@ -39,11 +37,12 @@ namespace Our_project
                "Beef Biryani" ,
                "Dhaga Kabab/ seekh kabab / gola kabab"
                              };
+          
         }
 
         private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            comboBox4.Items.Add("Dessert:");
+            Desserts.Items.Add("Dessert:");
             string[] items = {
                "Gulab Jamun",
                "Kheer",
@@ -55,7 +54,7 @@ namespace Our_project
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            comboBox3.Items.Add("Beverage options: ");
+            maincourse.Items.Add("Beverage options: ");
             string[] items = {
                "Chai" ,
                "Soft drinks",
@@ -91,6 +90,12 @@ namespace Our_project
         private void pictureBox6_MouseLeave(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Black;
+        }
+
+        private void recipt_Click(object sender, EventArgs e)
+        {
+            Voice v = new Voice();
+            v.Show();
         }
     }
 }
