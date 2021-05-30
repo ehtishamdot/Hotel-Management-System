@@ -85,16 +85,43 @@ namespace Our_project
         private void pictureBox6_MouseHover(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
+            label2.ForeColor = Color.Blue;
         }
 
         private void pictureBox6_MouseLeave(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Black;
+            label2.ForeColor = Color.Black;
         }
 
         private void recipt_Click(object sender, EventArgs e)
         {
+            this.Close();
             Voice v = new Voice();
+            v.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Recipt v = new Recipt();
+            v.Show();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Signin v = new Signin();
             v.Show();
         }
     }
