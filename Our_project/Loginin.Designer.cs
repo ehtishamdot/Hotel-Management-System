@@ -38,13 +38,13 @@ namespace Our_project
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.register = new System.Windows.Forms.Button();
             this.Sign = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -97,6 +97,7 @@ namespace Our_project
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             this.username.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_MouseClick);
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             this.username.Leave += new System.EventHandler(this.username_Leave);
             // 
             // panel4
@@ -123,6 +124,72 @@ namespace Our_project
             this.button1.TabIndex = 26;
             this.button1.Text = "SIGN UP";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // register
+            // 
+            this.register.BackColor = System.Drawing.Color.White;
+            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.register.FlatAppearance.BorderSize = 0;
+            this.register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.register.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.register.ForeColor = System.Drawing.Color.Black;
+            this.register.Location = new System.Drawing.Point(30, 455);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(306, 52);
+            this.register.TabIndex = 38;
+            this.register.Text = "Clicl here to Register";
+            this.register.UseVisualStyleBackColor = false;
+            this.register.Click += new System.EventHandler(this.register_Click);
+            this.register.MouseLeave += new System.EventHandler(this.register_MouseLeave);
+            this.register.MouseHover += new System.EventHandler(this.register_MouseHover);
+            // 
+            // Sign
+            // 
+            this.Sign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.Sign.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Sign.FlatAppearance.BorderSize = 0;
+            this.Sign.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Sign.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sign.ForeColor = System.Drawing.Color.White;
+            this.Sign.Location = new System.Drawing.Point(30, 368);
+            this.Sign.Name = "Sign";
+            this.Sign.Size = new System.Drawing.Size(306, 54);
+            this.Sign.TabIndex = 37;
+            this.Sign.Text = "Login In";
+            this.Sign.UseVisualStyleBackColor = false;
+            this.Sign.Click += new System.EventHandler(this.Sign_Click);
+            this.Sign.MouseLeave += new System.EventHandler(this.Sign_MouseLeave);
+            this.Sign.MouseHover += new System.EventHandler(this.Sign_MouseHover);
+            // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.exit.ForeColor = System.Drawing.Color.White;
+            this.exit.Location = new System.Drawing.Point(133, 525);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(90, 49);
+            this.exit.TabIndex = 39;
+            this.exit.Text = "EXIT";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
+            this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox1.Location = new System.Drawing.Point(226, 332);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(113, 19);
+            this.checkBox1.TabIndex = 40;
+            this.checkBox1.Text = "ShowPassword";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -154,62 +221,6 @@ namespace Our_project
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
-            // register
-            // 
-            this.register.BackColor = System.Drawing.Color.White;
-            this.register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.register.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.register.ForeColor = System.Drawing.Color.Black;
-            this.register.Location = new System.Drawing.Point(30, 455);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(306, 52);
-            this.register.TabIndex = 38;
-            this.register.Text = "Clicl here to Register";
-            this.register.UseVisualStyleBackColor = false;
-            this.register.Click += new System.EventHandler(this.register_Click);
-            this.register.MouseLeave += new System.EventHandler(this.register_MouseLeave);
-            this.register.MouseHover += new System.EventHandler(this.register_MouseHover);
-            // 
-            // Sign
-            // 
-            this.Sign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            this.Sign.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Sign.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sign.ForeColor = System.Drawing.Color.White;
-            this.Sign.Location = new System.Drawing.Point(30, 368);
-            this.Sign.Name = "Sign";
-            this.Sign.Size = new System.Drawing.Size(306, 54);
-            this.Sign.TabIndex = 37;
-            this.Sign.Text = "Login In";
-            this.Sign.UseVisualStyleBackColor = false;
-            this.Sign.Click += new System.EventHandler(this.Sign_Click);
-            // 
-            // exit
-            // 
-            this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(133, 525);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(90, 49);
-            this.exit.TabIndex = 39;
-            this.exit.Text = "EXIT";
-            this.exit.UseVisualStyleBackColor = false;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F);
-            this.checkBox1.Location = new System.Drawing.Point(226, 332);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 19);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.Text = "ShowPassword";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +245,7 @@ namespace Our_project
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

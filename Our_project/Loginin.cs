@@ -26,9 +26,10 @@ namespace Our_project
        
         private void register_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
             Signin sign = new Signin();
             sign.Show();
+           
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -44,7 +45,11 @@ namespace Our_project
         private void username_Leave(object sender, EventArgs e)
         {
             panel5.BackColor = Color.Black;
-            username.Text = "Username";
+            if (username.Text == "")
+            {
+                username.Text = "Username";
+            }
+                
         }
         private void password_MouseClick(object sender, MouseEventArgs e)
         {
@@ -55,10 +60,16 @@ namespace Our_project
 
         private void password_Leave(object sender, EventArgs e)
         {
+            password.UseSystemPasswordChar = false;
             panel6.BackColor = Color.Black;
-            password.Text = "Password";
-        }
+            if (password.Text =="")
+            {
+                password.Text = "Password";
 
+            }
+
+        }
+       
         private void Sign_Click(object sender, EventArgs e)
         {
                        
@@ -66,7 +77,9 @@ namespace Our_project
                 {
                     if (pass == password.Text)
                     {
-
+                    Entry choose = new Entry();
+                    choose.Show();
+                    this.Close();
                     MessageBox.Show("Login sucess Welcome to Homepage ");
                     }
                     else
@@ -107,7 +120,35 @@ namespace Our_project
             register.BackColor = Color.White;
         }
 
+        private void Sign_MouseHover(object sender, EventArgs e)
+        {
+            Sign.ForeColor = Color.LightGray;
+        }
 
+        private void Sign_MouseLeave(object sender, EventArgs e)
+        {
+            Sign.ForeColor = Color.White;
+        }
+
+        private void exit_MouseHover(object sender, EventArgs e)
+        {
+            exit.ForeColor = Color.LightGray;
+        }
+
+        private void exit_MouseLeave(object sender, EventArgs e)
+        {
+            exit.ForeColor = Color.White;
+        }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

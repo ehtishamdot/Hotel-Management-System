@@ -9,7 +9,6 @@ C:\Users\mm computer\documents\visual studio 2010\Projects\Our_project\Our_proje
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\bin\Debug\Our_project.exe
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\bin\Debug\Our_project.pdb
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.csprojAssemblyReference.cache
-E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Form2.resources
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Properties.Resources.resources
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.csproj.GenerateResource.cache
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.csproj.CoreCompileInputs.cache
@@ -17,3 +16,5 @@ E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.pdb
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Signin.resources
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Login.resources
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Entry.resources
+E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.choices.resources

@@ -21,8 +21,10 @@ namespace Our_project
      
         private void Sign_Click(object sender, EventArgs e)
         {
+            
             Login login = new Login(txt_sign_username.Text,txt_sign_password.Text);
             login.Show();
+            this.Visible = false;
             
 
         }
@@ -35,7 +37,11 @@ namespace Our_project
         private void txt_sign_username_Leave(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Black;
-            txt_sign_username.Text = "Username";
+            if(txt_sign_username.Text == "")
+            {
+                txt_sign_username.Text = "Username";
+            }
+
         }
 
         private void textBox2_Click(object sender, EventArgs e)
@@ -48,7 +54,11 @@ namespace Our_project
         private void txt_sign_password_Leave(object sender, EventArgs e)
         {
             panel2.BackColor = Color.Black;
-            txt_sign_password.Text = "Password";
+            if (txt_sign_password.Text == "")
+            {
+                txt_sign_password.Text = "Password";
+            }               
+            txt_sign_password.UseSystemPasswordChar = false;
         }
 
         private void textBox3_Click(object sender, EventArgs e)
@@ -62,7 +72,12 @@ namespace Our_project
         private void textBox3_Leave(object sender, EventArgs e)
         {
             panel18.BackColor = Color.Black;
-            email.Text = "Email";
+            if (email.Text == "")
+            {
+                email.Text = "Email";
+            }
+               
+            
         }
         private void exit_Click_1(object sender, EventArgs e)
         {
@@ -93,7 +108,21 @@ namespace Our_project
                 txt_sign_password.UseSystemPasswordChar = false;
             }
         }
-        
+
+        private void exit_MouseHover(object sender, EventArgs e)
+        {
+            exit.ForeColor = Color.LightGray;
+        }
+
+        private void exit_MouseLeave(object sender, EventArgs e)
+        {
+            exit.ForeColor = Color.White;
+        }
+
+        private void txt_sign_username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

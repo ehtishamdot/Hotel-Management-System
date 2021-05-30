@@ -7,21 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Our_project
+namespace Our_project.Resources
 {
-    public partial class Form2 : Form
+    public partial class Form4 : Form
     {
-        public Form2()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

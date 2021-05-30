@@ -102,15 +102,19 @@
             // 
             this.exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
             this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(128, 496);
+            this.exit.Location = new System.Drawing.Point(134, 496);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(90, 49);
             this.exit.TabIndex = 10;
             this.exit.Text = "EXIT";
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.exit_Click_1);
+            this.exit.MouseLeave += new System.EventHandler(this.exit_MouseLeave);
+            this.exit.MouseHover += new System.EventHandler(this.exit_MouseHover);
             // 
             // txt_sign_username
             // 
@@ -124,6 +128,7 @@
             this.txt_sign_username.TabStop = false;
             this.txt_sign_username.Text = "Username";
             this.txt_sign_username.Click += new System.EventHandler(this.textBox1_Click);
+            this.txt_sign_username.TextChanged += new System.EventHandler(this.txt_sign_username_TextChanged);
             this.txt_sign_username.Leave += new System.EventHandler(this.txt_sign_username_Leave);
             // 
             // panel1
