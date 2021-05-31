@@ -61,9 +61,10 @@ namespace Our_project
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Button();
             this.loginid = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.dish1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.reciptbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.star5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star3)).BeginInit();
@@ -391,16 +392,16 @@ namespace Our_project
             this.loginid.Text = "label";
             this.loginid.Visible = false;
             // 
-            // label13
+            // dish1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(529, 308);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 23);
-            this.label13.TabIndex = 99;
-            this.label13.Text = "label";
-            this.label13.Visible = false;
+            this.dish1.AutoSize = true;
+            this.dish1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish1.Location = new System.Drawing.Point(385, 344);
+            this.dish1.Name = "dish1";
+            this.dish1.Size = new System.Drawing.Size(46, 23);
+            this.dish1.TabIndex = 99;
+            this.dish1.Text = "label";
+            this.dish1.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -424,15 +425,32 @@ namespace Our_project
             this.label15.Text = "label";
             this.label15.Visible = false;
             // 
+            // reciptbutton
+            // 
+            this.reciptbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.reciptbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reciptbutton.FlatAppearance.BorderSize = 0;
+            this.reciptbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.reciptbutton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.reciptbutton.ForeColor = System.Drawing.Color.White;
+            this.reciptbutton.Location = new System.Drawing.Point(599, 664);
+            this.reciptbutton.Name = "reciptbutton";
+            this.reciptbutton.Size = new System.Drawing.Size(133, 40);
+            this.reciptbutton.TabIndex = 102;
+            this.reciptbutton.Text = "Print Recipt";
+            this.reciptbutton.UseVisualStyleBackColor = false;
+            this.reciptbutton.Click += new System.EventHandler(this.reciptbutton_Click);
+            // 
             // Recipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 746);
+            this.Controls.Add(this.reciptbutton);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.dish1);
             this.Controls.Add(this.loginid);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.panel);
@@ -511,8 +529,9 @@ namespace Our_project
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label loginid;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label dish1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button reciptbutton;
     }
 }

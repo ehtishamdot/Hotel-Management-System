@@ -9,13 +9,20 @@ using System.Windows.Forms;
 
 namespace Our_project
 {
+
+   
     public partial class menudinein : Form
     {
+      
         public menudinein()
         {
             InitializeComponent();
         }
-
+        private void starters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(starters.Text);
+          
+        }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
@@ -55,9 +62,11 @@ namespace Our_project
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Recipt v = new Recipt();
-            v.Show();
+            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text);
+            starter.ShowDialog();
+
         }
+
+        
     }
 }

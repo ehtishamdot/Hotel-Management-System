@@ -25,6 +25,8 @@ namespace Our_project
                "Russian Salad",
                "Chicken stick boti"
                              };
+          //  MessageBox.Show(items);
+            
          
         }
         private void maincourse_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,8 +116,8 @@ namespace Our_project
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
-            Recipt v = new Recipt();
-            v.Show();
+           Recipt v = new Recipt();
+           v.Show();
         }
 
         private void exit_Click(object sender, EventArgs e)

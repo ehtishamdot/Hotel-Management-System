@@ -111,11 +111,9 @@ namespace Our_project
             this.Desserts.Font = new System.Drawing.Font("Arial", 11.25F);
             this.Desserts.FormattingEnabled = true;
             this.Desserts.Items.AddRange(new object[] {
-            "Gulab Jamun",
-            "          ",
+            "Gulab Jamun          ",
             "Kheer              ",
-            "Doodh Dulari",
-            "           ",
+            "Doodh Dulari           ",
             "Rabri           ",
             "Gajar Ka Halwa"});
             this.Desserts.Location = new System.Drawing.Point(499, 263);
@@ -133,8 +131,10 @@ namespace Our_project
             "Beef Biryani",
             "Chicken Malai Handi",
             "Chicken Shinwari Karhai",
-            "Dhaga Kabab/ seekh kabab / gola kabab",
-            "Mutton Rogan Josh"});
+            "Dhaga Kabab",
+            "gola kabab",
+            "Mutton Rogan Josh",
+            "seekh kabab "});
             this.maincourse.Location = new System.Drawing.Point(258, 263);
             this.maincourse.Name = "maincourse";
             this.maincourse.Size = new System.Drawing.Size(183, 25);
@@ -158,6 +158,7 @@ namespace Our_project
             this.starters.TabIndex = 67;
             this.starters.Text = "Starters";
             this.starters.ValueMember = "Chicken corn soup";
+            this.starters.SelectedIndexChanged += new System.EventHandler(this.starters_SelectedIndexChanged);
             // 
             // beverages
             // 
@@ -552,9 +553,10 @@ namespace Our_project
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "menudinein";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "menudinein";
+            this.Text = "Menu Card For Dine In";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

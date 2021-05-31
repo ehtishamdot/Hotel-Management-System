@@ -10,10 +10,25 @@ using System.Windows.Forms;
 namespace Our_project
 {
     public partial class Recipt : Form
-    {
+    {  
         public Recipt()
         {
             InitializeComponent();
+        }
+        //starters.Text, maincourse.Text, Desserts.Text
+        public Recipt(string starters, string maincourse, string Desserts)
+        {
+            InitializeComponent();
+            this.starters = starters;
+            
+        }
+        string starters;
+        
+        private void reciptbutton_Click(object sender, EventArgs e)
+        {
+           dish1.Text = starters;
+            MessageBox.Show(starters);
+            dish1.Visible = true;
         }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
@@ -96,5 +111,12 @@ namespace Our_project
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }
