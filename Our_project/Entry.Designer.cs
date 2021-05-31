@@ -100,7 +100,6 @@
             this.dinein.TabIndex = 40;
             this.dinein.Text = "Dine In";
             this.dinein.UseVisualStyleBackColor = false;
-            this.dinein.Click += new System.EventHandler(this.dinein_Click);
             this.dinein.MouseLeave += new System.EventHandler(this.dinein_MouseLeave);
             this.dinein.MouseHover += new System.EventHandler(this.dinein_MouseHover);
             // 

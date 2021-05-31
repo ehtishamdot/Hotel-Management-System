@@ -19,32 +19,3 @@ E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Entry.resources
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.choices.resources
 E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Voice.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.exe
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.pdb
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\bin\Debug\Our_project.exe
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\bin\Debug\Our_project.pdb
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.csprojResolveAssemblyReference.cache
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.choices.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Signin.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Entry.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Login.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Properties.Resources.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Voice.resources
-C:\Users\mm computer\Downloads\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.csproj.GenerateResource.Cache
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\bin\Debug\Our_project.exe
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\bin\Debug\Our_project.pdb
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.csprojAssemblyReference.cache
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.choices.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Signin.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Entry.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Login.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Properties.Resources.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Voice.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.csproj.GenerateResource.cache
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.csproj.CoreCompileInputs.cache
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.exe
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.pdb
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.menudinein.resources
-C:\Users\ahtis\Downloads\Compressed\Hotel-Management-System-main\Hotel-Management-System-main\Our_project\obj\x86\Debug\Our_project.Recipt.resources
-E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.menudinein.resources
-E:\Onedrive\OneDrive - SSUET\Subjects 2020 first semester\2nd sem\opp cs\PROJECT\Our_project\Hotel-Management-System\Our_project\obj\x86\Debug\Our_project.Recipt.resources

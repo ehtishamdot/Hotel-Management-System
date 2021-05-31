@@ -52,18 +52,6 @@
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="menudinein.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="menudinein.Designer.cs">
-      <DependentUpon>menudinein.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Recipt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Recipt.Designer.cs">
-      <DependentUpon>Recipt.cs</DependentUpon>
-    </Compile>
     <Compile Include="signin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="menudinein.resx">
-      <DependentUpon>menudinein.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Recipt.resx">
-      <DependentUpon>Recipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="signin.resx">
       <DependentUpon>signin.cs</DependentUpon>
@@ -139,18 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stay icon.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nashtaaaaaaa.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\for lunch.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\for dinner.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\starrrrrrr.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

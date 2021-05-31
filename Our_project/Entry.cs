@@ -57,14 +57,7 @@ namespace Our_project
              this.Close();
             choices takeawy = new choices();
             takeawy.Show();
-            
-        }
 
-        private void dinein_Click(object sender, EventArgs e)
-        {
-            this.Close();
-           menudinein v = new menudinein();
-            v.Show();
         }
     }
 }
