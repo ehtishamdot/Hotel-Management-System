@@ -15,26 +15,121 @@ namespace Our_project
         {
             InitializeComponent();
         }
-        //starters.Text, maincourse.Text, Desserts.Text
-        public Recipt(string starters, string maincourse, string Desserts)
+
+        public Recipt(string userid)
+        {
+            this.userid = userid;
+        }
+        public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch, 
+            string dinner,int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
         {
             InitializeComponent();
             this.starters = starters;
             this.maincourse = maincourse;
             this.Desserts = Desserts;
+            this.beverages = beverages;
+            this.breakfast = breakfast;
+            this.lunch = lunch;
+            this.dinner = dinner;
+            this.starter_int = starter_int;
+            this.maincourse_int = maincourse_int;
+            this.desserts_int = desserts_int;
+            this.beverages_int = beverages_int;
+            this.breakfast_int = breakfast_int;
+            this.lunch_int = lunch_int;
+            this.dinner_int = dinner_int;
             
         }
+        //PRICES
+        // int starters;
+        // int maincourse;
+        // int Desserts;
+        //  int beverages;
+        // int breakfast;
+        //  int lunch;
+        // int dinner;
+
+        int price=0,sum;
+
+        private void calculate_Click(object sender, EventArgs e)
+        {
+            if (dish1.Text != "Options:")
+            {
+                price += 250 * starter_int;
+                starters_price.Text = price + "Rs";
+            }
+            else { starters_price.Text = "0RS"; }
+        }
+
+
+        //VALUES PASSING FROM MENU
         string starters;
         string maincourse;
         string Desserts;
+        string beverages;
+        string breakfast;
+        string lunch;
+        string dinner;
+        int starter_int;
+        int maincourse_int;
+        string desserts_int;
+        int beverages_int;
+        int breakfast_int;
+        string lunch_int;
+        string dinner_int;
+
+        //logicID
+        string userid;
         
         private void reciptbutton_Click(object sender, EventArgs e)
         {
-           dish1.Text = starters;
+            //PRICES
+            /* Hot and sour soup
+               Chicken corn soup
+               Russian Salad
+               Chicken sticks 
+            */
+
+          
+
+
+            //menu items
+            dish1.Text = starters;
            dish2.Text = maincourse;
            dish3.Text = Desserts;
-                    
-            dish1.Visible = true;
+           dish4.Text = beverages;
+           dish5.Text = breakfast;
+           dish6.Text = lunch;
+           dish7.Text = dinner;
+            if(dish1.Text == "Options:")
+            {
+                dish1.Text = "No item";
+            }if(dish2.Text == "Options:")
+            {
+                dish2.Text = "No item";
+            }if(dish3.Text == "Options:")
+            {
+                dish3.Text = "No item";
+            }if(dish4.Text == "Options:")
+            {
+                dish4.Text = "No item";
+            }if(dish5.Text == "Options:")
+            {
+                dish5.Text = "No item";
+            }if(dish6.Text == "Options:")
+            {
+                dish6.Text = "No item";
+            }if(dish7.Text == "Options:")
+            {
+                dish7.Text = "No item";
+            }
+
+
+            //LOGIN ID
+
+            loginid.Text = userid;
+                
+                
         }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
@@ -106,6 +201,8 @@ namespace Our_project
             panel5.BackColor = Color.Blue;
         }
 
+    
+
         private void exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -113,15 +210,7 @@ namespace Our_project
             v.Show();
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         
     }

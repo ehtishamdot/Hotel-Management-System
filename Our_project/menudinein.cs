@@ -20,8 +20,7 @@ namespace Our_project
         }
         private void starters_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(starters.Text);
-          
+                     
         }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
@@ -62,11 +61,26 @@ namespace Our_project
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text);
+            int starter_value;
+            int maincourse_value;
+            int beverages_value;
+            int breakfast_value ;
+            
+
+            starter_value = int.Parse(starter_int.Text);
+            maincourse_value = int.Parse(starter_int.Text);
+            beverages_value = int.Parse(starter_int.Text);
+            breakfast_value = int.Parse(starter_int.Text);          
+          
+            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text,beverages.Text,breakfast.Text,
+                lunch.Text,dinner.Text, starter_value, maincourse_value,desserts_int.Text, beverages_value, breakfast_value, lunch_int.Text,dinner_int.Text);
             starter.ShowDialog();
 
         }
 
-        
+        private void menudinein_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

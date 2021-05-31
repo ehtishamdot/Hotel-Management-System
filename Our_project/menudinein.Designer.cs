@@ -48,24 +48,38 @@ namespace Our_project
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dinner = new System.Windows.Forms.ComboBox();
+            this.lunch = new System.Windows.Forms.ComboBox();
+            this.breakfast = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.cleaning = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.sweetest = new System.Windows.Forms.Label();
+            this.towel = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Button();
+            this.starter_int = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.maincourse_int = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.beverages_int = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.breakfast_int = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.dinner_int = new System.Windows.Forms.ComboBox();
+            this.desserts_int = new System.Windows.Forms.ComboBox();
+            this.lunch_int = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -120,7 +134,7 @@ namespace Our_project
             this.Desserts.Name = "Desserts";
             this.Desserts.Size = new System.Drawing.Size(164, 25);
             this.Desserts.TabIndex = 69;
-            this.Desserts.Text = "Desserts";
+            this.Desserts.Text = "Options:";
             // 
             // maincourse
             // 
@@ -140,7 +154,7 @@ namespace Our_project
             this.maincourse.Size = new System.Drawing.Size(183, 25);
             this.maincourse.Sorted = true;
             this.maincourse.TabIndex = 68;
-            this.maincourse.Text = "Main course";
+            this.maincourse.Text = "Options:";
             // 
             // starters
             // 
@@ -156,7 +170,7 @@ namespace Our_project
             this.starters.Name = "starters";
             this.starters.Size = new System.Drawing.Size(147, 25);
             this.starters.TabIndex = 67;
-            this.starters.Text = "Starters";
+            this.starters.Text = "Options:";
             this.starters.ValueMember = "Chicken corn soup";
             this.starters.SelectedIndexChanged += new System.EventHandler(this.starters_SelectedIndexChanged);
             // 
@@ -167,7 +181,7 @@ namespace Our_project
             this.beverages.Items.AddRange(new object[] {
             "Chai           ",
             "Soft drinks",
-            "          ",
+            "Cold Drinks          ",
             "Fruit juices           ",
             "Falooda          ",
             "Mineral Water"});
@@ -175,7 +189,7 @@ namespace Our_project
             this.beverages.Name = "beverages";
             this.beverages.Size = new System.Drawing.Size(164, 25);
             this.beverages.TabIndex = 66;
-            this.beverages.Text = "Beverages";
+            this.beverages.Text = "Options:";
             this.beverages.UseWaitCursor = true;
             // 
             // label6
@@ -223,7 +237,7 @@ namespace Our_project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(336, 21);
+            this.label1.Location = new System.Drawing.Point(307, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 42);
             this.label1.TabIndex = 57;
@@ -300,59 +314,58 @@ namespace Our_project
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox3
+            // dinner
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.dinner.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.dinner.FormattingEnabled = true;
+            this.dinner.Items.AddRange(new object[] {
             "Chicken Malai Handi",
             "Beef nihari",
             "beef nihari",
             "chicken karhai",
-            "butter garlic naan",
-            "cold drinks"});
-            this.comboBox3.Location = new System.Drawing.Point(499, 500);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(164, 25);
-            this.comboBox3.TabIndex = 95;
-            this.comboBox3.Text = "Options:";
+            "butter garlic naan"});
+            this.dinner.Location = new System.Drawing.Point(499, 529);
+            this.dinner.Name = "dinner";
+            this.dinner.Size = new System.Drawing.Size(164, 25);
+            this.dinner.TabIndex = 95;
+            this.dinner.Text = "Options:";
             // 
-            // comboBox2
+            // lunch
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.lunch.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.lunch.FormattingEnabled = true;
+            this.lunch.Items.AddRange(new object[] {
             "Chicken/Mutton Biryani",
             "Chicken/Beef Pulao",
             "Malai Kofta ",
             "Steam Rice",
             "Chicken/Beef Qorma"});
-            this.comboBox2.Location = new System.Drawing.Point(258, 500);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 25);
-            this.comboBox2.TabIndex = 94;
-            this.comboBox2.Text = "Options:";
+            this.lunch.Location = new System.Drawing.Point(258, 529);
+            this.lunch.Name = "lunch";
+            this.lunch.Size = new System.Drawing.Size(183, 25);
+            this.lunch.TabIndex = 94;
+            this.lunch.Text = "Options:";
             // 
-            // comboBox1
+            // breakfast
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.breakfast.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.breakfast.FormattingEnabled = true;
+            this.breakfast.Items.AddRange(new object[] {
             "Halwa Poori",
             "Chai Paratha ",
             "Anda Paratha",
             "Murgh Choley"});
-            this.comboBox1.Location = new System.Drawing.Point(49, 500);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 25);
-            this.comboBox1.TabIndex = 93;
-            this.comboBox1.Text = "Options:";
+            this.breakfast.Location = new System.Drawing.Point(49, 529);
+            this.breakfast.Name = "breakfast";
+            this.breakfast.Size = new System.Drawing.Size(147, 25);
+            this.breakfast.TabIndex = 93;
+            this.breakfast.Text = "Options:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(532, 326);
+            this.label9.Location = new System.Drawing.Point(532, 355);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 23);
             this.label9.TabIndex = 92;
@@ -362,7 +375,7 @@ namespace Our_project
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(290, 326);
+            this.label7.Location = new System.Drawing.Point(290, 355);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 23);
             this.label7.TabIndex = 91;
@@ -372,7 +385,7 @@ namespace Our_project
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(75, 326);
+            this.label8.Location = new System.Drawing.Point(75, 355);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(105, 23);
             this.label8.TabIndex = 90;
@@ -381,24 +394,24 @@ namespace Our_project
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Our_project.Properties.Resources.for_dinner;
-            this.pictureBox7.Location = new System.Drawing.Point(499, 371);
+            this.pictureBox7.Location = new System.Drawing.Point(499, 400);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(164, 113);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 89;
             this.pictureBox7.TabStop = false;
             // 
-            // label10
+            // cleaning
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Maroon;
-            this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(740, 386);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 17);
-            this.label10.TabIndex = 88;
-            this.label10.Text = "Cleaning";
+            this.cleaning.AutoSize = true;
+            this.cleaning.BackColor = System.Drawing.Color.Maroon;
+            this.cleaning.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleaning.ForeColor = System.Drawing.Color.White;
+            this.cleaning.Location = new System.Drawing.Point(740, 415);
+            this.cleaning.Name = "cleaning";
+            this.cleaning.Size = new System.Drawing.Size(65, 17);
+            this.cleaning.TabIndex = 88;
+            this.cleaning.Text = "Cleaning";
             // 
             // label11
             // 
@@ -406,7 +419,7 @@ namespace Our_project
             this.label11.BackColor = System.Drawing.Color.Maroon;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(720, 341);
+            this.label11.Location = new System.Drawing.Point(720, 370);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 23);
             this.label11.TabIndex = 87;
@@ -415,7 +428,7 @@ namespace Our_project
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Our_project.Properties.Resources.for_lunch;
-            this.pictureBox8.Location = new System.Drawing.Point(258, 371);
+            this.pictureBox8.Location = new System.Drawing.Point(258, 400);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(183, 113);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -425,7 +438,7 @@ namespace Our_project
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Our_project.Properties.Resources.nashtaaaaaaa;
-            this.pictureBox9.Location = new System.Drawing.Point(49, 371);
+            this.pictureBox9.Location = new System.Drawing.Point(49, 400);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(147, 113);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -436,7 +449,7 @@ namespace Our_project
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.Black;
-            this.checkBox3.Location = new System.Drawing.Point(719, 473);
+            this.checkBox3.Location = new System.Drawing.Point(719, 502);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 84;
@@ -446,7 +459,7 @@ namespace Our_project
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(719, 431);
+            this.checkBox2.Location = new System.Drawing.Point(719, 460);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 83;
@@ -456,40 +469,40 @@ namespace Our_project
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(719, 386);
+            this.checkBox1.Location = new System.Drawing.Point(719, 415);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 82;
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // label12
+            // sweetest
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Maroon;
-            this.label12.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(740, 470);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 17);
-            this.label12.TabIndex = 81;
-            this.label12.Text = "Sweetest Surprise";
+            this.sweetest.AutoSize = true;
+            this.sweetest.BackColor = System.Drawing.Color.Maroon;
+            this.sweetest.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sweetest.ForeColor = System.Drawing.SystemColors.Control;
+            this.sweetest.Location = new System.Drawing.Point(740, 499);
+            this.sweetest.Name = "sweetest";
+            this.sweetest.Size = new System.Drawing.Size(128, 17);
+            this.sweetest.TabIndex = 81;
+            this.sweetest.Text = "Sweetest Surprise";
             // 
-            // label13
+            // towel
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Maroon;
-            this.label13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(740, 428);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 17);
-            this.label13.TabIndex = 80;
-            this.label13.Text = "Towel";
+            this.towel.AutoSize = true;
+            this.towel.BackColor = System.Drawing.Color.Maroon;
+            this.towel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.towel.ForeColor = System.Drawing.SystemColors.Control;
+            this.towel.Location = new System.Drawing.Point(740, 457);
+            this.towel.Name = "towel";
+            this.towel.Size = new System.Drawing.Size(45, 17);
+            this.towel.TabIndex = 80;
+            this.towel.Text = "Towel";
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox10.Location = new System.Drawing.Point(708, 316);
+            this.pictureBox10.Location = new System.Drawing.Point(708, 345);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(193, 209);
             this.pictureBox10.TabIndex = 78;
@@ -511,29 +524,183 @@ namespace Our_project
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // starter_int
+            // 
+            this.starter_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.starter_int.Location = new System.Drawing.Point(125, 300);
+            this.starter_int.Name = "starter_int";
+            this.starter_int.Size = new System.Drawing.Size(56, 25);
+            this.starter_int.TabIndex = 100;
+            this.starter_int.Text = "1";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(45, 300);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 23);
+            this.label15.TabIndex = 99;
+            this.label15.Text = "Quantity";
+            // 
+            // maincourse_int
+            // 
+            this.maincourse_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.maincourse_int.Location = new System.Drawing.Point(338, 300);
+            this.maincourse_int.Name = "maincourse_int";
+            this.maincourse_int.Size = new System.Drawing.Size(56, 25);
+            this.maincourse_int.TabIndex = 102;
+            this.maincourse_int.Text = "1";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(254, 300);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(74, 23);
+            this.label16.TabIndex = 101;
+            this.label16.Text = "Quantity";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(495, 302);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(33, 23);
+            this.label17.TabIndex = 103;
+            this.label17.Text = "KG";
+            // 
+            // beverages_int
+            // 
+            this.beverages_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.beverages_int.Location = new System.Drawing.Point(782, 298);
+            this.beverages_int.Name = "beverages_int";
+            this.beverages_int.Size = new System.Drawing.Size(56, 25);
+            this.beverages_int.TabIndex = 106;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(702, 300);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 23);
+            this.label18.TabIndex = 105;
+            this.label18.Text = "Quantity";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(495, 570);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(33, 23);
+            this.label19.TabIndex = 111;
+            this.label19.Text = "KG";
+            // 
+            // breakfast_int
+            // 
+            this.breakfast_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.breakfast_int.Location = new System.Drawing.Point(125, 570);
+            this.breakfast_int.Name = "breakfast_int";
+            this.breakfast_int.Size = new System.Drawing.Size(56, 25);
+            this.breakfast_int.TabIndex = 108;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(45, 570);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(74, 23);
+            this.label21.TabIndex = 107;
+            this.label21.Text = "Quantity";
+            // 
+            // dinner_int
+            // 
+            this.dinner_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.dinner_int.FormattingEnabled = true;
+            this.dinner_int.Items.AddRange(new object[] {
+            "Half",
+            "Full"});
+            this.dinner_int.Location = new System.Drawing.Point(534, 568);
+            this.dinner_int.Name = "dinner_int";
+            this.dinner_int.Size = new System.Drawing.Size(78, 25);
+            this.dinner_int.TabIndex = 113;
+            // 
+            // desserts_int
+            // 
+            this.desserts_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.desserts_int.FormattingEnabled = true;
+            this.desserts_int.Items.AddRange(new object[] {
+            "Half ",
+            "Full"});
+            this.desserts_int.Location = new System.Drawing.Point(534, 300);
+            this.desserts_int.Name = "desserts_int";
+            this.desserts_int.Size = new System.Drawing.Size(78, 25);
+            this.desserts_int.TabIndex = 114;
+            // 
+            // lunch_int
+            // 
+            this.lunch_int.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.lunch_int.FormattingEnabled = true;
+            this.lunch_int.Items.AddRange(new object[] {
+            "Half Plate",
+            "Full  Plate"});
+            this.lunch_int.Location = new System.Drawing.Point(294, 568);
+            this.lunch_int.Name = "lunch_int";
+            this.lunch_int.Size = new System.Drawing.Size(78, 25);
+            this.lunch_int.TabIndex = 116;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(255, 570);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 23);
+            this.label10.TabIndex = 115;
+            this.label10.Text = "KG";
+            // 
             // menudinein
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(925, 773);
+            this.ClientSize = new System.Drawing.Size(927, 773);
+            this.Controls.Add(this.lunch_int);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.desserts_int);
+            this.Controls.Add(this.dinner_int);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.breakfast_int);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.beverages_int);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.maincourse_int);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.starter_int);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.exit);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dinner);
+            this.Controls.Add(this.lunch);
+            this.Controls.Add(this.breakfast);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.cleaning);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.sweetest);
+            this.Controls.Add(this.towel);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -557,6 +724,7 @@ namespace Our_project
             this.Name = "menudinein";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Card For Dine In";
+            this.Load += new System.EventHandler(this.menudinein_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -592,23 +760,37 @@ namespace Our_project
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox dinner;
+        private System.Windows.Forms.ComboBox lunch;
+        private System.Windows.Forms.ComboBox breakfast;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label cleaning;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label sweetest;
+        private System.Windows.Forms.Label towel;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.TextBox starter_int;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox maincourse_int;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox beverages_int;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox breakfast_int;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox desserts_int;
+        private System.Windows.Forms.ComboBox lunch_int;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox dinner_int;
     }
 }

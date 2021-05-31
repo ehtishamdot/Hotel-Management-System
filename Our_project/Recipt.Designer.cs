@@ -68,6 +68,25 @@ namespace Our_project
             this.dish2 = new System.Windows.Forms.Label();
             this.dish3 = new System.Windows.Forms.Label();
             this.dish4 = new System.Windows.Forms.Label();
+            this.dish6 = new System.Windows.Forms.Label();
+            this.dish5 = new System.Windows.Forms.Label();
+            this.dish7 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cleaning = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.sweetest = new System.Windows.Forms.Label();
+            this.towel = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.starters_price = new System.Windows.Forms.Label();
+            this.calculate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.star5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star3)).BeginInit();
@@ -155,7 +174,6 @@ namespace Our_project
             this.label10.Size = new System.Drawing.Size(122, 23);
             this.label10.TabIndex = 78;
             this.label10.Text = "PLEASE RATE:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // comboBox2
             // 
@@ -376,7 +394,7 @@ namespace Our_project
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(599, 17);
+            this.exit.Location = new System.Drawing.Point(687, 12);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(133, 40);
             this.exit.TabIndex = 97;
@@ -399,12 +417,12 @@ namespace Our_project
             // 
             this.dish1.AutoSize = true;
             this.dish1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.dish1.Location = new System.Drawing.Point(385, 344);
+            this.dish1.ForeColor = System.Drawing.Color.Maroon;
+            this.dish1.Location = new System.Drawing.Point(386, 375);
             this.dish1.Name = "dish1";
-            this.dish1.Size = new System.Drawing.Size(46, 23);
+            this.dish1.Size = new System.Drawing.Size(67, 23);
             this.dish1.TabIndex = 99;
-            this.dish1.Text = "label";
-            this.dish1.Click += new System.EventHandler(this.label13_Click);
+            this.dish1.Text = "No item";
             // 
             // label14
             // 
@@ -436,7 +454,7 @@ namespace Our_project
             this.reciptbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.reciptbutton.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.reciptbutton.ForeColor = System.Drawing.Color.White;
-            this.reciptbutton.Location = new System.Drawing.Point(599, 664);
+            this.reciptbutton.Location = new System.Drawing.Point(687, 664);
             this.reciptbutton.Name = "reciptbutton";
             this.reciptbutton.Size = new System.Drawing.Size(133, 40);
             this.reciptbutton.TabIndex = 102;
@@ -448,38 +466,268 @@ namespace Our_project
             // 
             this.dish2.AutoSize = true;
             this.dish2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.dish2.Location = new System.Drawing.Point(385, 367);
+            this.dish2.ForeColor = System.Drawing.Color.Maroon;
+            this.dish2.Location = new System.Drawing.Point(386, 440);
             this.dish2.Name = "dish2";
-            this.dish2.Size = new System.Drawing.Size(46, 23);
+            this.dish2.Size = new System.Drawing.Size(67, 23);
             this.dish2.TabIndex = 103;
-            this.dish2.Text = "label";
+            this.dish2.Text = "No item";
             // 
             // dish3
             // 
             this.dish3.AutoSize = true;
             this.dish3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.dish3.Location = new System.Drawing.Point(385, 392);
+            this.dish3.ForeColor = System.Drawing.Color.Maroon;
+            this.dish3.Location = new System.Drawing.Point(386, 510);
             this.dish3.Name = "dish3";
-            this.dish3.Size = new System.Drawing.Size(46, 23);
+            this.dish3.Size = new System.Drawing.Size(67, 23);
             this.dish3.TabIndex = 104;
-            this.dish3.Text = "label";
+            this.dish3.Text = "No item";
             // 
             // dish4
             // 
             this.dish4.AutoSize = true;
             this.dish4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.dish4.Location = new System.Drawing.Point(385, 415);
+            this.dish4.ForeColor = System.Drawing.Color.Maroon;
+            this.dish4.Location = new System.Drawing.Point(386, 583);
             this.dish4.Name = "dish4";
-            this.dish4.Size = new System.Drawing.Size(46, 23);
+            this.dish4.Size = new System.Drawing.Size(67, 23);
             this.dish4.TabIndex = 105;
-            this.dish4.Text = "label";
+            this.dish4.Text = "No item";
+            // 
+            // dish6
+            // 
+            this.dish6.AutoSize = true;
+            this.dish6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish6.ForeColor = System.Drawing.Color.Maroon;
+            this.dish6.Location = new System.Drawing.Point(557, 440);
+            this.dish6.Name = "dish6";
+            this.dish6.Size = new System.Drawing.Size(67, 23);
+            this.dish6.TabIndex = 106;
+            this.dish6.Text = "No item";
+            // 
+            // dish5
+            // 
+            this.dish5.AutoSize = true;
+            this.dish5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish5.ForeColor = System.Drawing.Color.Maroon;
+            this.dish5.Location = new System.Drawing.Point(557, 375);
+            this.dish5.Name = "dish5";
+            this.dish5.Size = new System.Drawing.Size(67, 23);
+            this.dish5.TabIndex = 107;
+            this.dish5.Text = "No item";
+            // 
+            // dish7
+            // 
+            this.dish7.AutoSize = true;
+            this.dish7.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish7.ForeColor = System.Drawing.Color.Maroon;
+            this.dish7.Location = new System.Drawing.Point(558, 510);
+            this.dish7.Name = "dish7";
+            this.dish7.Size = new System.Drawing.Size(67, 23);
+            this.dish7.TabIndex = 108;
+            this.dish7.Text = "No item";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(386, 352);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 23);
+            this.label13.TabIndex = 109;
+            this.label13.Text = "STARTERS";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(386, 417);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 23);
+            this.label16.TabIndex = 110;
+            this.label16.Text = "MAIN COURSE";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(385, 487);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(92, 23);
+            this.label17.TabIndex = 111;
+            this.label17.Text = "DESSERTS";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(386, 560);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(105, 23);
+            this.label18.TabIndex = 112;
+            this.label18.Text = "BEVERAGES";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(557, 417);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(105, 23);
+            this.label19.TabIndex = 113;
+            this.label19.Text = "BREAKFAST";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(557, 352);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(64, 23);
+            this.label20.TabIndex = 114;
+            this.label20.Text = "LUNCH";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(557, 487);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(68, 23);
+            this.label21.TabIndex = 115;
+            this.label21.Text = "DINNER";
+            // 
+            // cleaning
+            // 
+            this.cleaning.AutoSize = true;
+            this.cleaning.BackColor = System.Drawing.Color.White;
+            this.cleaning.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleaning.ForeColor = System.Drawing.Color.Black;
+            this.cleaning.Location = new System.Drawing.Point(728, 397);
+            this.cleaning.Name = "cleaning";
+            this.cleaning.Size = new System.Drawing.Size(65, 17);
+            this.cleaning.TabIndex = 124;
+            this.cleaning.Text = "Cleaning";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(699, 352);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(132, 23);
+            this.label23.TabIndex = 123;
+            this.label23.Text = "SPECIAL NEEDS";
+            // 
+            // sweetest
+            // 
+            this.sweetest.AutoSize = true;
+            this.sweetest.BackColor = System.Drawing.Color.White;
+            this.sweetest.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sweetest.ForeColor = System.Drawing.Color.Black;
+            this.sweetest.Location = new System.Drawing.Point(728, 481);
+            this.sweetest.Name = "sweetest";
+            this.sweetest.Size = new System.Drawing.Size(63, 17);
+            this.sweetest.TabIndex = 119;
+            this.sweetest.Text = "Surprise";
+            // 
+            // towel
+            // 
+            this.towel.AutoSize = true;
+            this.towel.BackColor = System.Drawing.Color.White;
+            this.towel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.towel.ForeColor = System.Drawing.Color.Black;
+            this.towel.Location = new System.Drawing.Point(728, 439);
+            this.towel.Name = "towel";
+            this.towel.Size = new System.Drawing.Size(45, 17);
+            this.towel.TabIndex = 118;
+            this.towel.Text = "Towel";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.BackColor = System.Drawing.Color.Black;
+            this.checkBox3.Location = new System.Drawing.Point(707, 484);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 122;
+            this.checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Black;
+            this.checkBox2.Location = new System.Drawing.Point(707, 442);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 121;
+            this.checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Black;
+            this.checkBox1.Location = new System.Drawing.Point(707, 397);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 120;
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // starters_price
+            // 
+            this.starters_price.AutoSize = true;
+            this.starters_price.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.starters_price.ForeColor = System.Drawing.Color.DimGray;
+            this.starters_price.Location = new System.Drawing.Point(485, 352);
+            this.starters_price.Name = "starters_price";
+            this.starters_price.Size = new System.Drawing.Size(48, 23);
+            this.starters_price.TabIndex = 125;
+            this.starters_price.Text = "price";
+            // 
+            // calculate
+            // 
+            this.calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.calculate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calculate.FlatAppearance.BorderSize = 0;
+            this.calculate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.calculate.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.calculate.ForeColor = System.Drawing.Color.White;
+            this.calculate.Location = new System.Drawing.Point(529, 664);
+            this.calculate.Name = "calculate";
+            this.calculate.Size = new System.Drawing.Size(133, 40);
+            this.calculate.TabIndex = 126;
+            this.calculate.Text = "Calculate";
+            this.calculate.UseVisualStyleBackColor = false;
+            this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
             // Recipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(766, 746);
+            this.ClientSize = new System.Drawing.Size(843, 746);
+            this.Controls.Add(this.calculate);
+            this.Controls.Add(this.starters_price);
+            this.Controls.Add(this.cleaning);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.sweetest);
+            this.Controls.Add(this.towel);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.dish7);
+            this.Controls.Add(this.dish5);
+            this.Controls.Add(this.dish6);
             this.Controls.Add(this.dish4);
             this.Controls.Add(this.dish3);
             this.Controls.Add(this.dish2);
@@ -572,5 +820,24 @@ namespace Our_project
         private System.Windows.Forms.Label dish2;
         private System.Windows.Forms.Label dish3;
         private System.Windows.Forms.Label dish4;
+        private System.Windows.Forms.Label dish6;
+        private System.Windows.Forms.Label dish5;
+        private System.Windows.Forms.Label dish7;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label cleaning;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label sweetest;
+        private System.Windows.Forms.Label towel;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label starters_price;
+        private System.Windows.Forms.Button calculate;
     }
 }
