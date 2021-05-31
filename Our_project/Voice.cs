@@ -15,8 +15,6 @@ namespace Our_project
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-=======
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -68,6 +66,5 @@ namespace Our_project
         {
 
         }
->>>>>>> parent of 33adcbd (initial_commit)
     }
 }

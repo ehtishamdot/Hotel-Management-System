@@ -29,10 +29,6 @@ namespace Our_project
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            this.SuspendLayout();
-            // 
-=======
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -288,17 +284,10 @@ namespace Our_project
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
->>>>>>> parent of 33adcbd (initial_commit)
             // Voice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(622, 420);
-            this.Name = "Voice";
-            this.Text = "Voice";
-            this.ResumeLayout(false);
-=======
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(807, 447);
             this.Controls.Add(this.comboBox3);
@@ -331,13 +320,10 @@ namespace Our_project
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
->>>>>>> parent of 33adcbd (initial_commit)
 
         }
 
         #endregion
-<<<<<<< HEAD
-=======
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -360,6 +346,5 @@ namespace Our_project
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
->>>>>>> parent of 33adcbd (initial_commit)
     }
 }
