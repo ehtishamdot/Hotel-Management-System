@@ -16,12 +16,12 @@ namespace Our_project
             InitializeComponent();
         }
 
-      ///  public Recipt(string userid)
-      //  {
-           // this.userid = userid;
-      //  }
-        public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch, 
-            string dinner,int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
+        ///  public Recipt(string userid)
+        //  {
+        // this.userid = userid;
+        //  }
+        public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch,
+            string dinner, int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
         {
             InitializeComponent();
             this.starters = starters;
@@ -38,7 +38,7 @@ namespace Our_project
             this.breakfast_int = breakfast_int;
             this.lunch_int = lunch_int;
             this.dinner_int = dinner_int;
-            
+
         }
         //PRICES
         // int starters;
@@ -49,18 +49,60 @@ namespace Our_project
         //  int lunch;
         // int dinner;
 
-        int price=0,sum;
-
-        private void calculate_Click(object sender, EventArgs e)
+       
+        
+        private void calculate_Click(object sender, EventArgs e)     //for starter
         {
-            if (dish1.Text != "Options:")
+            int price = 0, price2 = 0, price3 = 0;
+            int price4 = 0, price5 = 0;
+
+            if (starters != "Options:")
             {
                 price += 250 * starter_int;
                 starters_price.Text = price + "Rs";
             }
             else { starters_price.Text = "0RS"; }
+
+            MessageBox.Show(dish2.Text);
+            if (maincourse != "Options:")
+            {
+                price2 += 550 * maincourse_int;
+                maincourse_price.Text = price2 + "Rs";
+            }
+            else { maincourse_price.Text = "0RS"; }
+            
+            if (Desserts != "Options:")
+            {
+                if (desserts_int == "Half ")
+                {
+                    price += 200;
+                    dessert_price.Text = price + "Rs";
+                }
+                else if (desserts_int == "Full")
+                {
+                    price += 400;
+                    dessert_price.Text = price + "Rs";
+                }
+            }
+            else { dessert_price.Text = "0RS"; }
+            if (beverages != "Options:")
+            {
+                price4 += 150 * beverages_int;
+                beverages_price.Text = price4 + "Rs";
+            }
+            else { beverages_price.Text = "0RS"; }
+
+            if (breakfast != "Options:")
+            {
+                price5 += 200 * breakfast_int;
+                breakfast_price.Text = price5 + "Rs";
+            }
+            else { breakfast_price.Text = "0RS"; }
+
+            
         }
 
+ 
 
         //VALUES PASSING FROM MENU
         string starters;
@@ -79,9 +121,8 @@ namespace Our_project
         string dinner_int;
 
         //logicID
-      //  string userid;
-        
-        private void reciptbutton_Click(object sender, EventArgs e)
+        //  string userid;
+        private void reciptbutton_Click_1(object sender, EventArgs e)
         {
             //PRICES
             /* Hot and sour soup
@@ -90,36 +131,40 @@ namespace Our_project
                Chicken sticks 
             */
 
-          
-
-
             //menu items
+
             dish1.Text = starters;
-           dish2.Text = maincourse;
-           dish3.Text = Desserts;
-           dish4.Text = beverages;
-           dish5.Text = breakfast;
-           dish6.Text = lunch;
-           dish7.Text = dinner;
-            if(dish1.Text == "Options:")
+            dish2.Text = maincourse;
+            dish3.Text = Desserts;
+            dish4.Text = beverages;
+            dish5.Text = breakfast;
+            dish6.Text = lunch;
+            dish7.Text = dinner;
+            if (dish1.Text == "Options:")
             {
                 dish1.Text = "No item";
-            }if(dish2.Text == "Options:")
+            }
+            if (dish2.Text == "Options:")
             {
                 dish2.Text = "No item";
-            }if(dish3.Text == "Options:")
+            }
+            if (dish3.Text == "Options:")
             {
                 dish3.Text = "No item";
-            }if(dish4.Text == "Options:")
+            }
+            if (dish4.Text == "Options:")
             {
                 dish4.Text = "No item";
-            }if(dish5.Text == "Options:")
+            }
+            if (dish5.Text == "Options:")
             {
                 dish5.Text = "No item";
-            }if(dish6.Text == "Options:")
+            }
+            if (dish6.Text == "Options:")
             {
                 dish6.Text = "No item";
-            }if(dish7.Text == "Options:")
+            }
+            if (dish7.Text == "Options:")
             {
                 dish7.Text = "No item";
             }
@@ -127,10 +172,10 @@ namespace Our_project
 
             //LOGIN ID
 
-           // loginid.Text = userid;
-                
-                
+            // loginid.Text = userid;
+
         }
+       
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
@@ -210,8 +255,9 @@ namespace Our_project
             v.Show();
         }
 
-      
+        private void exit_Click_1(object sender, EventArgs e)
+        {
 
-        
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace Our_project
             panel1.BackColor = Color.Black;
             if(txt_sign_username.Text == "")
             {
-                txt_sign_username.Text = "Username.";
+                txt_sign_username.Text = "Username";
             }
 
         }
@@ -57,7 +57,7 @@ namespace Our_project
             panel2.BackColor = Color.Black;
             if (txt_sign_password.Text == "")
             {
-                txt_sign_password.Text = "Password.";
+                txt_sign_password.Text = "Password";
             }               
             txt_sign_password.UseSystemPasswordChar = false;
         }

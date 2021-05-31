@@ -161,6 +161,15 @@
   <ItemGroup>
     <None Include="Resources\starrrrrrr.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washing_hand_hygiene_hands_icon_142811.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropbox2_icon-icons.com_74974.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick_check_mark_icon_153886.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

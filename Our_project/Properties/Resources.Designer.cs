@@ -73,6 +73,16 @@ namespace Our_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dropbox2_icon_icons_com_74974 {
+            get {
+                object obj = ResourceManager.GetObject("dropbox2_icon-icons.com_74974", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap email_icon {
             get {
                 object obj = ResourceManager.GetObject("email icon", resourceCulture);
@@ -156,6 +166,26 @@ namespace Our_project.Properties {
         internal static System.Drawing.Bitmap stay_icon {
             get {
                 object obj = ResourceManager.GetObject("stay icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tick_check_mark_icon_153886 {
+            get {
+                object obj = ResourceManager.GetObject("tick_check_mark_icon_153886", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap washing_hand_hygiene_hands_icon_142811 {
+            get {
+                object obj = ResourceManager.GetObject("washing_hand_hygiene_hands_icon_142811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -8,9 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Our_project
-{
-
-   
+{  
     public partial class menudinein : Form
     {
       
@@ -79,6 +77,11 @@ namespace Our_project
         }
 
         private void menudinein_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
