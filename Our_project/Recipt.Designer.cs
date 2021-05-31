@@ -65,6 +65,9 @@ namespace Our_project
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.reciptbutton = new System.Windows.Forms.Button();
+            this.dish2 = new System.Windows.Forms.Label();
+            this.dish3 = new System.Windows.Forms.Label();
+            this.dish4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.star5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star3)).BeginInit();
@@ -441,12 +444,45 @@ namespace Our_project
             this.reciptbutton.UseVisualStyleBackColor = false;
             this.reciptbutton.Click += new System.EventHandler(this.reciptbutton_Click);
             // 
+            // dish2
+            // 
+            this.dish2.AutoSize = true;
+            this.dish2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish2.Location = new System.Drawing.Point(385, 367);
+            this.dish2.Name = "dish2";
+            this.dish2.Size = new System.Drawing.Size(46, 23);
+            this.dish2.TabIndex = 103;
+            this.dish2.Text = "label";
+            // 
+            // dish3
+            // 
+            this.dish3.AutoSize = true;
+            this.dish3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish3.Location = new System.Drawing.Point(385, 392);
+            this.dish3.Name = "dish3";
+            this.dish3.Size = new System.Drawing.Size(46, 23);
+            this.dish3.TabIndex = 104;
+            this.dish3.Text = "label";
+            // 
+            // dish4
+            // 
+            this.dish4.AutoSize = true;
+            this.dish4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.dish4.Location = new System.Drawing.Point(385, 415);
+            this.dish4.Name = "dish4";
+            this.dish4.Size = new System.Drawing.Size(46, 23);
+            this.dish4.TabIndex = 105;
+            this.dish4.Text = "label";
+            // 
             // Recipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 746);
+            this.Controls.Add(this.dish4);
+            this.Controls.Add(this.dish3);
+            this.Controls.Add(this.dish2);
             this.Controls.Add(this.reciptbutton);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -533,5 +569,8 @@ namespace Our_project
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button reciptbutton;
+        private System.Windows.Forms.Label dish2;
+        private System.Windows.Forms.Label dish3;
+        private System.Windows.Forms.Label dish4;
     }
 }

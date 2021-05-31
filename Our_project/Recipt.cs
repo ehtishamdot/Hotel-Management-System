@@ -20,14 +20,20 @@ namespace Our_project
         {
             InitializeComponent();
             this.starters = starters;
+            this.maincourse = maincourse;
+            this.Desserts = Desserts;
             
         }
         string starters;
+        string maincourse;
+        string Desserts;
         
         private void reciptbutton_Click(object sender, EventArgs e)
         {
            dish1.Text = starters;
-            MessageBox.Show(starters);
+           dish2.Text = maincourse;
+           dish3.Text = Desserts;
+                    
             dish1.Visible = true;
         }
 
