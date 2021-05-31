@@ -16,10 +16,10 @@ namespace Our_project
             InitializeComponent();
         }
 
-        public Recipt(string userid)
-        {
-            this.userid = userid;
-        }
+      ///  public Recipt(string userid)
+      //  {
+           // this.userid = userid;
+      //  }
         public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch, 
             string dinner,int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
         {
@@ -79,7 +79,7 @@ namespace Our_project
         string dinner_int;
 
         //logicID
-        string userid;
+      //  string userid;
         
         private void reciptbutton_Click(object sender, EventArgs e)
         {
@@ -127,7 +127,7 @@ namespace Our_project
 
             //LOGIN ID
 
-            loginid.Text = userid;
+           // loginid.Text = userid;
                 
                 
         }

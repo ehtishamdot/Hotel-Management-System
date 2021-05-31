@@ -25,7 +25,7 @@ namespace Our_project
             Login login = new Login(txt_sign_username.Text,txt_sign_password.Text);
             login.Show();
             this.Visible = false;
-            Recipt loginid = new Recipt(txt_sign_username.Text);
+           // Recipt loginid = new Recipt(txt_sign_username.Text);
 
 
         }
