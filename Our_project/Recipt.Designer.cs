@@ -466,7 +466,7 @@ namespace Our_project
             this.Controls.Add(this.label1);
             this.Name = "Recipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Confirmation Of Your Creddentials And Recipt";
+            this.Text = "Recipt";
             ((System.ComponentModel.ISupportInitialize)(this.star5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star3)).EndInit();

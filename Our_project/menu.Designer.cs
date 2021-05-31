@@ -290,7 +290,11 @@ namespace Our_project
             this.Name = "choices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.Text = "Menu Card for Take Away";
+=======
+            this.Text = "Menu Card";
+>>>>>>> parent of 33adcbd (initial_commit)
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 =======
             this.Text = "Selection";

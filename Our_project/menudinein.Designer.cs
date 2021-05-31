@@ -554,7 +554,7 @@ namespace Our_project
             this.Controls.Add(this.label1);
             this.Name = "menudinein";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu Card For Dine In";
+            this.Text = "menudinein";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
