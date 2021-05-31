@@ -39,7 +39,7 @@ namespace Our_project
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.modepayment = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -56,8 +56,8 @@ namespace Our_project
             this.exit = new System.Windows.Forms.Button();
             this.loginid = new System.Windows.Forms.Label();
             this.dish1 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.finalbill = new System.Windows.Forms.Label();
+            this.paymentmode = new System.Windows.Forms.Label();
             this.reciptbutton = new System.Windows.Forms.Button();
             this.dish2 = new System.Windows.Forms.Label();
             this.dish3 = new System.Windows.Forms.Label();
@@ -181,16 +181,17 @@ namespace Our_project
             this.label10.TabIndex = 78;
             this.label10.Text = "PLEASE RATE:";
             // 
-            // comboBox2
+            // modepayment
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.modepayment.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.modepayment.FormattingEnabled = true;
+            this.modepayment.Items.AddRange(new object[] {
             "Cash in hand",
             "Debit card"});
-            this.comboBox2.Location = new System.Drawing.Point(43, 321);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(239, 21);
-            this.comboBox2.TabIndex = 77;
+            this.modepayment.Location = new System.Drawing.Point(43, 321);
+            this.modepayment.Name = "modepayment";
+            this.modepayment.Size = new System.Drawing.Size(239, 31);
+            this.modepayment.TabIndex = 77;
             // 
             // label8
             // 
@@ -324,7 +325,7 @@ namespace Our_project
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(687, 12);
+            this.exit.Location = new System.Drawing.Point(726, 17);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(133, 40);
             this.exit.TabIndex = 97;
@@ -354,27 +355,27 @@ namespace Our_project
             this.dish1.TabIndex = 99;
             this.dish1.Text = "No item";
             // 
-            // label14
+            // finalbill
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(479, 251);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(46, 23);
-            this.label14.TabIndex = 100;
-            this.label14.Text = "label";
-            this.label14.Visible = false;
+            this.finalbill.AutoSize = true;
+            this.finalbill.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.finalbill.Location = new System.Drawing.Point(479, 251);
+            this.finalbill.Name = "finalbill";
+            this.finalbill.Size = new System.Drawing.Size(46, 23);
+            this.finalbill.TabIndex = 100;
+            this.finalbill.Text = "label";
+            this.finalbill.Visible = false;
             // 
-            // label15
+            // paymentmode
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(547, 218);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(46, 23);
-            this.label15.TabIndex = 101;
-            this.label15.Text = "label";
-            this.label15.Visible = false;
+            this.paymentmode.AutoSize = true;
+            this.paymentmode.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.paymentmode.Location = new System.Drawing.Point(547, 218);
+            this.paymentmode.Name = "paymentmode";
+            this.paymentmode.Size = new System.Drawing.Size(46, 23);
+            this.paymentmode.TabIndex = 101;
+            this.paymentmode.Text = "label";
+            this.paymentmode.Visible = false;
             // 
             // reciptbutton
             // 
@@ -397,7 +398,7 @@ namespace Our_project
             this.dish2.AutoSize = true;
             this.dish2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish2.ForeColor = System.Drawing.Color.Maroon;
-            this.dish2.Location = new System.Drawing.Point(359, 440);
+            this.dish2.Location = new System.Drawing.Point(359, 451);
             this.dish2.Name = "dish2";
             this.dish2.Size = new System.Drawing.Size(67, 23);
             this.dish2.TabIndex = 103;
@@ -408,7 +409,7 @@ namespace Our_project
             this.dish3.AutoSize = true;
             this.dish3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish3.ForeColor = System.Drawing.Color.Maroon;
-            this.dish3.Location = new System.Drawing.Point(359, 510);
+            this.dish3.Location = new System.Drawing.Point(359, 522);
             this.dish3.Name = "dish3";
             this.dish3.Size = new System.Drawing.Size(67, 23);
             this.dish3.TabIndex = 104;
@@ -419,7 +420,7 @@ namespace Our_project
             this.dish4.AutoSize = true;
             this.dish4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish4.ForeColor = System.Drawing.Color.Maroon;
-            this.dish4.Location = new System.Drawing.Point(359, 583);
+            this.dish4.Location = new System.Drawing.Point(359, 591);
             this.dish4.Name = "dish4";
             this.dish4.Size = new System.Drawing.Size(67, 23);
             this.dish4.TabIndex = 105;
@@ -430,7 +431,7 @@ namespace Our_project
             this.dish6.AutoSize = true;
             this.dish6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish6.ForeColor = System.Drawing.Color.Maroon;
-            this.dish6.Location = new System.Drawing.Point(547, 440);
+            this.dish6.Location = new System.Drawing.Point(547, 451);
             this.dish6.Name = "dish6";
             this.dish6.Size = new System.Drawing.Size(67, 23);
             this.dish6.TabIndex = 106;
@@ -452,7 +453,7 @@ namespace Our_project
             this.dish7.AutoSize = true;
             this.dish7.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish7.ForeColor = System.Drawing.Color.Maroon;
-            this.dish7.Location = new System.Drawing.Point(548, 510);
+            this.dish7.Location = new System.Drawing.Point(548, 522);
             this.dish7.Name = "dish7";
             this.dish7.Size = new System.Drawing.Size(67, 23);
             this.dish7.TabIndex = 108;
@@ -790,8 +791,8 @@ namespace Our_project
             this.Controls.Add(this.dish3);
             this.Controls.Add(this.dish2);
             this.Controls.Add(this.reciptbutton);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.paymentmode);
+            this.Controls.Add(this.finalbill);
             this.Controls.Add(this.dish1);
             this.Controls.Add(this.loginid);
             this.Controls.Add(this.exit);
@@ -811,7 +812,7 @@ namespace Our_project
             this.Controls.Add(this.star2);
             this.Controls.Add(this.star1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.modepayment);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
@@ -855,7 +856,7 @@ namespace Our_project
         private System.Windows.Forms.PictureBox star2;
         private System.Windows.Forms.PictureBox star1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox modepayment;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
@@ -873,8 +874,8 @@ namespace Our_project
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Label loginid;
         private System.Windows.Forms.Label dish1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label finalbill;
+        private System.Windows.Forms.Label paymentmode;
         private System.Windows.Forms.Button reciptbutton;
         private System.Windows.Forms.Label dish2;
         private System.Windows.Forms.Label dish3;

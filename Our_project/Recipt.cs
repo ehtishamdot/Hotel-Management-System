@@ -54,7 +54,9 @@ namespace Our_project
         private void calculate_Click(object sender, EventArgs e)     //for starter
         {
             int price = 0, price2 = 0, price3 = 0;
-            int price4 = 0, price5 = 0;
+            int price4 = 0, price5 = 0, price6=0 ,price7=0;
+            int sum;
+           
 
             if (starters != "Options:")
             {
@@ -73,18 +75,19 @@ namespace Our_project
             
             if (Desserts != "Options:")
             {
-                if (desserts_int == "Half ")
+                if (desserts_int == "Half")
                 {
-                    price += 200;
-                    dessert_price.Text = price + "Rs";
+                    price3 += 200;
+                    dessert_price.Text = price3 + "Rs";
                 }
                 else if (desserts_int == "Full")
                 {
-                    price += 400;
-                    dessert_price.Text = price + "Rs";
+                    price3 += 400;
+                    dessert_price.Text = price3 + "Rs";
                 }
             }
             else { dessert_price.Text = "0RS"; }
+
             if (beverages != "Options:")
             {
                 price4 += 150 * beverages_int;
@@ -99,7 +102,35 @@ namespace Our_project
             }
             else { breakfast_price.Text = "0RS"; }
 
-            
+            if (lunch != "Options:")
+            {
+                if (lunch_int == "Half")
+                {
+                    price6 += 200;
+                    lunch_price.Text = price6 + "Rs";
+                }
+                else if (lunch_int == "Full")
+                {
+                    price6 += 400;
+                    lunch_price.Text = price6 + "Rs";
+                }
+            }
+            else { lunch_price.Text = "0RS"; }
+
+            if (dinner != "Options:")
+            {
+                price7 += 200 * breakfast_int;
+                dinner_price.Text = price7 + "Rs";
+            }
+            else { dinner_price.Text = "0RS"; }
+
+            //final BIll
+            sum = price + price2 + price3 + price4 + price5 + price6 + price7;
+            finalbill.Text = sum.ToString();
+            modepayment.Text = paymentmode.Text;
+            finalbill.Visible = true;
+            paymentmode.Visible = true;
+
         }
 
  
