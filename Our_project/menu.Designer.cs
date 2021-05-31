@@ -327,7 +327,7 @@ namespace Our_project
             this.Controls.Add(this.label1);
             this.Name = "choices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu Card";
+            this.Text = "Menu Card for Take Away";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
