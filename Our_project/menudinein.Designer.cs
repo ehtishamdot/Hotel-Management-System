@@ -172,7 +172,6 @@ namespace Our_project
             this.starters.TabIndex = 67;
             this.starters.Text = "Options:";
             this.starters.ValueMember = "Chicken corn soup";
-            this.starters.SelectedIndexChanged += new System.EventHandler(this.starters_SelectedIndexChanged);
             // 
             // beverages
             // 
@@ -420,7 +419,7 @@ namespace Our_project
             this.starter_int.Name = "starter_int";
             this.starter_int.Size = new System.Drawing.Size(56, 25);
             this.starter_int.TabIndex = 100;
-            this.starter_int.Text = "1";
+            this.starter_int.Text = "0";
             // 
             // label15
             // 
@@ -431,7 +430,6 @@ namespace Our_project
             this.label15.Size = new System.Drawing.Size(74, 23);
             this.label15.TabIndex = 99;
             this.label15.Text = "Quantity";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // maincourse_int
             // 
@@ -440,7 +438,7 @@ namespace Our_project
             this.maincourse_int.Name = "maincourse_int";
             this.maincourse_int.Size = new System.Drawing.Size(56, 25);
             this.maincourse_int.TabIndex = 102;
-            this.maincourse_int.Text = "1";
+            this.maincourse_int.Text = "0";
             // 
             // label16
             // 
@@ -469,7 +467,7 @@ namespace Our_project
             this.beverages_int.Name = "beverages_int";
             this.beverages_int.Size = new System.Drawing.Size(56, 25);
             this.beverages_int.TabIndex = 106;
-            this.beverages_int.Text = "1";
+            this.beverages_int.Text = "0";
             // 
             // label18
             // 
@@ -494,17 +492,17 @@ namespace Our_project
             // breakfast_int
             // 
             this.breakfast_int.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.breakfast_int.Location = new System.Drawing.Point(125, 570);
+            this.breakfast_int.Location = new System.Drawing.Point(125, 566);
             this.breakfast_int.Name = "breakfast_int";
             this.breakfast_int.Size = new System.Drawing.Size(56, 25);
             this.breakfast_int.TabIndex = 108;
-            this.breakfast_int.Text = "1";
+            this.breakfast_int.Text = "0";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label21.Location = new System.Drawing.Point(45, 570);
+            this.label21.Location = new System.Drawing.Point(45, 566);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(74, 23);
             this.label21.TabIndex = 107;
@@ -521,7 +519,7 @@ namespace Our_project
             this.dinner_int.Name = "dinner_int";
             this.dinner_int.Size = new System.Drawing.Size(78, 25);
             this.dinner_int.TabIndex = 113;
-            this.dinner_int.Text = "1";
+            this.dinner_int.Text = "Select";
             // 
             // desserts_int
             // 
@@ -534,6 +532,7 @@ namespace Our_project
             this.desserts_int.Name = "desserts_int";
             this.desserts_int.Size = new System.Drawing.Size(78, 25);
             this.desserts_int.TabIndex = 114;
+            this.desserts_int.Text = "Select";
             // 
             // lunch_int
             // 
@@ -542,21 +541,21 @@ namespace Our_project
             this.lunch_int.Items.AddRange(new object[] {
             "Half",
             "Full"});
-            this.lunch_int.Location = new System.Drawing.Point(330, 568);
+            this.lunch_int.Location = new System.Drawing.Point(294, 568);
             this.lunch_int.Name = "lunch_int";
             this.lunch_int.Size = new System.Drawing.Size(78, 25);
             this.lunch_int.TabIndex = 116;
-            this.lunch_int.Text = "1";
+            this.lunch_int.Text = "Select";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(255, 570);
+            this.label10.Location = new System.Drawing.Point(255, 566);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 23);
+            this.label10.Size = new System.Drawing.Size(33, 23);
             this.label10.TabIndex = 115;
-            this.label10.Text = "Quantity";
+            this.label10.Text = "KG";
             // 
             // pictureBox7
             // 
@@ -728,7 +727,6 @@ namespace Our_project
             this.Name = "menudinein";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Card For Dine In";
-            this.Load += new System.EventHandler(this.menudinein_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

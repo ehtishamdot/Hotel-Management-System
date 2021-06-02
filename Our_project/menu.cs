@@ -16,56 +16,7 @@ namespace Our_project
             InitializeComponent();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            starters.Items.Add("Starter options:");
-            string[] items = {
-               "Chicken corn soup",
-               "Hot & Sour soup" ,
-               "Russian Salad",
-               "Chicken stick boti"
-                             };
-          //  MessageBox.Show(items);
-            
-         
-        }
-        private void maincourse_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            maincourse.Items.Add("Main Course:");
-            string[] items = {
-               "Chicken Malai Handi" ,
-               "Mutton Rogan Josh",
-               "Chicken Shinwari Karhai",
-               "Beef Biryani" ,
-               "Dhaga Kabab/ seekh kabab / gola kabab"
-                             };
-          
-        }
-
-        private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            Desserts.Items.Add("Dessert:");
-            string[] items = {
-               "Gulab Jamun",
-               "Kheer",
-               "Doodh Dulari" ,
-               "Rabri" ,
-               "Gajar Ka Halwa"
-                             };
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            maincourse.Items.Add("Beverage options: ");
-            string[] items = {
-               "Chai" ,
-               "Soft drinks",
-               "Fruit juices",
-               "Falooda",
-               "Mineral Water"
-                             };
-        }
-
+     
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
@@ -103,15 +54,6 @@ namespace Our_project
             v.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {

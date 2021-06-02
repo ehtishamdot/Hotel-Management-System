@@ -97,7 +97,6 @@ namespace Our_project
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             this.username.MouseClick += new System.Windows.Forms.MouseEventHandler(this.username_MouseClick);
-            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             this.username.Leave += new System.EventHandler(this.username_Leave);
             // 
             // panel4
@@ -246,7 +245,6 @@ namespace Our_project
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

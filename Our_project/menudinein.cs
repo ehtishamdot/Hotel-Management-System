@@ -16,11 +16,7 @@ namespace Our_project
         {
             InitializeComponent();
         }
-        private void starters_SelectedIndexChanged(object sender, EventArgs e)
-        {
-                     
-        }
-
+    
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
             panel5.BackColor = Color.Blue;
@@ -66,9 +62,9 @@ namespace Our_project
             
 
             starter_value = int.Parse(starter_int.Text);
-            maincourse_value = int.Parse(starter_int.Text);
-            beverages_value = int.Parse(starter_int.Text);
-            breakfast_value = int.Parse(starter_int.Text);          
+            maincourse_value = int.Parse(maincourse_int.Text);
+            beverages_value = int.Parse(beverages_int.Text);
+            breakfast_value = int.Parse(breakfast_int.Text);          
           
             Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text,beverages.Text,breakfast.Text,
                 lunch.Text,dinner.Text, starter_value, maincourse_value,desserts_int.Text, beverages_value, breakfast_value, lunch_int.Text,dinner_int.Text);
@@ -76,14 +72,5 @@ namespace Our_project
 
         }
 
-        private void menudinein_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

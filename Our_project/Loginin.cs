@@ -140,15 +140,6 @@ namespace Our_project
             exit.ForeColor = Color.White;
         }
 
-        private void username_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
     }
     
 }

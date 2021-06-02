@@ -40,27 +40,25 @@ namespace Our_project
             this.dinner_int = dinner_int;
 
         }
-        //PRICES
-        // int starters;
-        // int maincourse;
-        // int Desserts;
-        //  int beverages;
-        // int breakfast;
-        //  int lunch;
-        // int dinner;
-
-       
-        
+             
         private void calculate_Click(object sender, EventArgs e)     //for starter
         {
+
+
+           
             int price = 0, price2 = 0, price3 = 0;
             int price4 = 0, price5 = 0, price6=0 ,price7=0;
             int sum;
-           
+
+            //Price Calculator
 
             if (starters != "Options:")
             {
-                price += 250 * starter_int;
+                price += 250;
+                if (starter_int!=0)
+                {
+                    price *= starter_int;
+                }               
                 starters_price.Text = price + "Rs";
             }
             else { starters_price.Text = "0RS"; }
@@ -68,7 +66,12 @@ namespace Our_project
             MessageBox.Show(dish2.Text);
             if (maincourse != "Options:")
             {
-                price2 += 550 * maincourse_int;
+                price2 += 550;
+                if (maincourse_int != 0)
+                {
+                    price2 *= maincourse_int;
+                }
+              
                 maincourse_price.Text = price2 + "Rs";
             }
             else { maincourse_price.Text = "0RS"; }
@@ -90,14 +93,23 @@ namespace Our_project
 
             if (beverages != "Options:")
             {
-                price4 += 150 * beverages_int;
+                price4 += 150;
+                if (beverages_int != 0)
+                {
+                    price4 *= beverages_int;
+                }                
                 beverages_price.Text = price4 + "Rs";
             }
             else { beverages_price.Text = "0RS"; }
 
             if (breakfast != "Options:")
             {
-                price5 += 200 * breakfast_int;
+                price5 += 200;
+                if (breakfast_int != 0)
+                {
+                    price5 *= breakfast_int;
+                }
+                 
                 breakfast_price.Text = price5 + "Rs";
             }
             else { breakfast_price.Text = "0RS"; }
@@ -119,10 +131,61 @@ namespace Our_project
 
             if (dinner != "Options:")
             {
-                price7 += 200 * breakfast_int;
-                dinner_price.Text = price7 + "Rs";
+                if (dinner_int == "Half")
+                {
+                    price7 += 200;
+                    dinner_price.Text = price3 + "Rs";
+                }
+                else if (dinner_int == "Full")
+                {
+                    price3 += 400;
+                    dinner_price.Text = price7 + "Rs";
+                }
             }
             else { dinner_price.Text = "0RS"; }
+
+
+            //Quantity qtQ
+            MessageBox.Show(starter_int.ToString());
+            if (starter_int != 0)
+            {
+                starter_qt.Text = starter_int.ToString();
+                starter_qt.Visible = true;
+            }
+            MessageBox.Show(maincourse_int.ToString());
+            if (maincourse_int != 0)
+            {
+                maincourse_qt.Text = maincourse_int +"";
+                maincourse_qt.Visible = true;
+            }
+            if (desserts_int != "Select")
+            {
+                desserts_qt.Text = desserts_int + "";
+                desserts_qt.Visible = true;
+            }
+            if (beverages_int != 0)
+            {
+                beverages_qt.Text = beverages_int + "";
+                beverages_qt.Visible = true;
+            }
+            if (breakfast_int != 0)
+            {
+                breakfast_qt.Text = breakfast_int + "";
+                breakfast_qt.Visible = true;
+            }
+            if (lunch_int != "Select")
+            {
+                lunch_qt.Text = lunch_int + "";
+                lunch_qt.Visible = true;
+            }
+            if (dinner_int != "Select")
+            {
+                dinner_qt.Text = dinner_int + "";
+                dinner_qt.Visible = true;
+            }
+
+
+
 
             //final BIll
             sum = price + price2 + price3 + price4 + price5 + price6 + price7;
@@ -155,12 +218,7 @@ namespace Our_project
         //  string userid;
         private void reciptbutton_Click_1(object sender, EventArgs e)
         {
-            //PRICES
-            /* Hot and sour soup
-               Chicken corn soup
-               Russian Salad
-               Chicken sticks 
-            */
+            
 
             //menu items
 
@@ -230,9 +288,14 @@ namespace Our_project
             panel1.BackColor = Color.Blue;
         }
    
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Signin v = new Signin();
+            v.Show();
+        }
 
-
-        private void star1_Click(object sender, EventArgs e)
+        private void star1_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Black;
@@ -241,7 +304,7 @@ namespace Our_project
             panel5.BackColor = Color.Black;
         }
 
-        private void star2_Click(object sender, EventArgs e)
+        private void star2_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Blue;
@@ -250,7 +313,7 @@ namespace Our_project
             panel5.BackColor = Color.Black;
         }
 
-        private void star3_Click(object sender, EventArgs e)
+        private void star3_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Blue;
@@ -259,7 +322,7 @@ namespace Our_project
             panel5.BackColor = Color.Black;
         }
 
-        private void star4_Click(object sender, EventArgs e)
+        private void star4_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Blue;
@@ -268,27 +331,13 @@ namespace Our_project
             panel5.BackColor = Color.Black;
         }
 
-        private void star5_Click(object sender, EventArgs e)
+        private void star5_Click_1(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Blue;
             panel3.BackColor = Color.Blue;
             panel4.BackColor = Color.Blue;
             panel5.BackColor = Color.Blue;
-        }
-
-    
-
-        private void exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Signin v = new Signin();
-            v.Show();
-        }
-
-        private void exit_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
