@@ -101,7 +101,7 @@ namespace Our_project
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.Dinein = new System.Windows.Forms.Label();
+            this.order = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star4)).BeginInit();
@@ -219,7 +219,7 @@ namespace Our_project
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(357, 275);
+            this.label7.Location = new System.Drawing.Point(359, 295);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(148, 23);
             this.label7.TabIndex = 75;
@@ -347,13 +347,14 @@ namespace Our_project
             this.exit.TabIndex = 97;
             this.exit.Text = "LOG OUT";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click_1);
             // 
             // loginid
             // 
             this.loginid.AutoSize = true;
             this.loginid.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.loginid.ForeColor = System.Drawing.Color.DimGray;
-            this.loginid.Location = new System.Drawing.Point(461, 126);
+            this.loginid.Location = new System.Drawing.Point(448, 124);
             this.loginid.Name = "loginid";
             this.loginid.Size = new System.Drawing.Size(74, 23);
             this.loginid.TabIndex = 98;
@@ -375,23 +376,23 @@ namespace Our_project
             this.finalbill.AutoSize = true;
             this.finalbill.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.finalbill.ForeColor = System.Drawing.Color.DimGray;
-            this.finalbill.Location = new System.Drawing.Point(479, 246);
+            this.finalbill.Location = new System.Drawing.Point(461, 246);
             this.finalbill.Name = "finalbill";
             this.finalbill.Size = new System.Drawing.Size(46, 23);
             this.finalbill.TabIndex = 100;
             this.finalbill.Text = "label";
-            this.finalbill.Visible = false;
             // 
             // paymentmode
             // 
             this.paymentmode.AutoSize = true;
             this.paymentmode.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.paymentmode.ForeColor = System.Drawing.Color.DimGray;
-            this.paymentmode.Location = new System.Drawing.Point(537, 162);
+            this.paymentmode.Location = new System.Drawing.Point(531, 161);
             this.paymentmode.Name = "paymentmode";
             this.paymentmode.Size = new System.Drawing.Size(87, 23);
             this.paymentmode.TabIndex = 101;
             this.paymentmode.Text = "Debit card";
+            this.paymentmode.Visible = false;
             // 
             // reciptbutton
             // 
@@ -436,7 +437,7 @@ namespace Our_project
             this.dish4.AutoSize = true;
             this.dish4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.dish4.ForeColor = System.Drawing.Color.Maroon;
-            this.dish4.Location = new System.Drawing.Point(357, 608);
+            this.dish4.Location = new System.Drawing.Point(359, 617);
             this.dish4.Name = "dish4";
             this.dish4.Size = new System.Drawing.Size(67, 23);
             this.dish4.TabIndex = 105;
@@ -509,7 +510,7 @@ namespace Our_project
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(357, 577);
+            this.label18.Location = new System.Drawing.Point(359, 586);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(105, 23);
             this.label18.TabIndex = 112;
@@ -599,7 +600,7 @@ namespace Our_project
             this.beverages_price.AutoSize = true;
             this.beverages_price.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.beverages_price.ForeColor = System.Drawing.Color.DimGray;
-            this.beverages_price.Location = new System.Drawing.Point(477, 577);
+            this.beverages_price.Location = new System.Drawing.Point(479, 586);
             this.beverages_price.Name = "beverages_price";
             this.beverages_price.Size = new System.Drawing.Size(48, 23);
             this.beverages_price.TabIndex = 129;
@@ -689,6 +690,7 @@ namespace Our_project
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 92;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
             // 
             // star5
             // 
@@ -791,7 +793,7 @@ namespace Our_project
             this.beverages_qt.AutoSize = true;
             this.beverages_qt.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
             this.beverages_qt.ForeColor = System.Drawing.Color.DimGray;
-            this.beverages_qt.Location = new System.Drawing.Point(357, 631);
+            this.beverages_qt.Location = new System.Drawing.Point(359, 640);
             this.beverages_qt.Name = "beverages_qt";
             this.beverages_qt.Size = new System.Drawing.Size(36, 23);
             this.beverages_qt.TabIndex = 146;
@@ -880,16 +882,17 @@ namespace Our_project
             this.label14.TabIndex = 153;
             this.label14.Text = "ORDER:";
             // 
-            // Dinein
+            // order
             // 
-            this.Dinein.AutoSize = true;
-            this.Dinein.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Dinein.ForeColor = System.Drawing.Color.DimGray;
-            this.Dinein.Location = new System.Drawing.Point(435, 204);
-            this.Dinein.Name = "Dinein";
-            this.Dinein.Size = new System.Drawing.Size(58, 23);
-            this.Dinein.TabIndex = 154;
-            this.Dinein.Text = "Dinein";
+            this.order.AutoSize = true;
+            this.order.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold);
+            this.order.ForeColor = System.Drawing.Color.DimGray;
+            this.order.Location = new System.Drawing.Point(435, 204);
+            this.order.Name = "order";
+            this.order.Size = new System.Drawing.Size(56, 23);
+            this.order.TabIndex = 154;
+            this.order.Text = "check";
+            this.order.Click += new System.EventHandler(this.Dinein_Click);
             // 
             // Recipt
             // 
@@ -897,7 +900,7 @@ namespace Our_project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(886, 746);
-            this.Controls.Add(this.Dinein);
+            this.Controls.Add(this.order);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -1060,6 +1063,6 @@ namespace Our_project
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label Dinein;
+        private System.Windows.Forms.Label order;
     }
 }

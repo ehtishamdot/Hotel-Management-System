@@ -57,9 +57,21 @@ namespace Our_project
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            int starter_value;
+            int maincourse_value;
+            int beverages_value;
+
+            starter_value = int.Parse(starter_int.Text);
+            maincourse_value = int.Parse(maincourse_int.Text);
+            beverages_value = int.Parse(beverages_int.Text);         
+
+            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text, beverages.Text, 
+                  starter_value, maincourse_value, desserts_int.Text, beverages_value);
+            starter.ShowDialog();
+
             this.Close();
-           Recipt v = new Recipt();
-           v.Show();
+       
+
         }
 
         private void exit_Click(object sender, EventArgs e)

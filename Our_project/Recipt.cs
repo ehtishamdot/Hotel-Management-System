@@ -15,11 +15,13 @@ namespace Our_project
         {
             InitializeComponent();
         }
+        string userid;
+        public Recipt(string userid)
+          {
+        this.userid = userid;
+          }
 
-        ///  public Recipt(string userid)
-        //  {
-        // this.userid = userid;
-        //  }
+        ///DINEIN
         public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch,
             string dinner, int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
         {
@@ -40,7 +42,24 @@ namespace Our_project
             this.dinner_int = dinner_int;
 
         }
-             
+
+        //TAKEAWAY
+
+        public Recipt(string starters, string maincourse, string Desserts, string beverages,
+            int starter_int, int maincourse_int, string desserts_int, int beverages_int)
+        {
+            InitializeComponent();
+            this.starters = starters;
+            this.maincourse = maincourse;
+            this.Desserts = Desserts;
+            this.beverages = beverages;           
+            this.starter_int = starter_int;
+            this.maincourse_int = maincourse_int;
+            this.desserts_int = desserts_int;
+            this.beverages_int = beverages_int;
+
+        }
+
         private void calculate_Click(object sender, EventArgs e)     //for starter
         {
 
@@ -260,8 +279,8 @@ namespace Our_project
 
 
             //LOGIN ID
-
-            // loginid.Text = userid;
+            
+            loginid.Text = userid;
 
         }
        
@@ -338,6 +357,25 @@ namespace Our_project
             panel3.BackColor = Color.Blue;
             panel4.BackColor = Color.Blue;
             panel5.BackColor = Color.Blue;
+        }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
+        {
+            Entry v = new Entry();
+            v.Show();
+            this.Close();
+        }
+
+        private void Dinein_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click_1(object sender, EventArgs e)
+        {
+            Signin v = new Signin();
+            v.Show();
+            this.Close();
         }
     }
 }
