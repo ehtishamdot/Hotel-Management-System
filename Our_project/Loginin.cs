@@ -60,7 +60,7 @@ namespace Our_project
 
         private void password_Leave(object sender, EventArgs e)
         {
-            password.UseSystemPasswordChar = false;
+           // password.UseSystemPasswordChar = false;
             panel6.BackColor = Color.Black;
             if (password.Text =="")
             {
