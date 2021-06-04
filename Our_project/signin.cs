@@ -31,7 +31,11 @@ namespace Our_project
         }
         private void textBox1_Click(object sender, EventArgs e)
         {
-            txt_sign_username.Clear();
+            if(txt_sign_username.Text == "Username")
+            {
+                txt_sign_username.Clear();
+            }
+            
             panel1.BackColor = Color.Blue;
         }
 
@@ -47,10 +51,26 @@ namespace Our_project
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            txt_sign_password.Clear();
-            txt_sign_password.UseSystemPasswordChar = true;
+           
+            if (txt_sign_password.Text == "Password")
+            {
+                txt_sign_password.Clear();             
+            }
+           
+                    
             panel2.BackColor = Color.Blue;
             panel2.ForeColor = Color.Blue;
+        }
+        private void txt_sign_password_MouseHover(object sender, EventArgs e)
+        {
+            if (txt_sign_password.Text == "Password")
+            {
+                txt_sign_password.Text = "Password";
+            }
+            else
+            {
+                txt_sign_password.UseSystemPasswordChar = true;
+            }
         }
         private void txt_sign_password_Leave(object sender, EventArgs e)
         {
@@ -59,7 +79,7 @@ namespace Our_project
             {
                 txt_sign_password.Text = "Password";
             }               
-            txt_sign_password.UseSystemPasswordChar = false;
+        
         }
 
         private void textBox3_Click(object sender, EventArgs e)
@@ -120,6 +140,7 @@ namespace Our_project
             exit.ForeColor = Color.White;
         }
 
+      
     }
     
 }

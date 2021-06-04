@@ -54,7 +54,7 @@ namespace Our_project
         
         private void takeaway_Click(object sender, EventArgs e)
         {
-             this.Close();
+            this.Close();
             choices takeawy = new choices();
             takeawy.Show();
             

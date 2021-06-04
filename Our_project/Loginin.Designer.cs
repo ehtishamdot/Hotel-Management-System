@@ -69,6 +69,7 @@ namespace Our_project
             this.password.Text = "Password";
             this.password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.password_MouseClick);
             this.password.Leave += new System.EventHandler(this.password_Leave);
+            this.password.MouseHover += new System.EventHandler(this.password_MouseHover);
             // 
             // panel7
             // 

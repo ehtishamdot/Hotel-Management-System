@@ -39,34 +39,46 @@ namespace Our_project
                
         private void username_MouseClick(object sender, MouseEventArgs e)
         {
-            username.Clear();
+            if (username.Text == "Username")
+            {
+                username.Clear();
+            }
             panel5.BackColor = Color.Blue;
         }
         private void username_Leave(object sender, EventArgs e)
         {
             panel5.BackColor = Color.Black;
-            if (username.Text == "")
-            {
-                username.Text = "Username";
-            }
+            
                 
+        }
+        private void password_MouseHover(object sender, EventArgs e)
+        {
+            
+            if (password.Text == "Password") { }          
+            else
+            {
+                password.UseSystemPasswordChar = true;
+            }
         }
         private void password_MouseClick(object sender, MouseEventArgs e)
         {
-            password.Clear();
-            password.UseSystemPasswordChar = true;
+            if (password.Text == "Password")
+            {
+                password.Clear();
+            }
+            else
+            {
+                password.UseSystemPasswordChar = true;
+            }
             panel6.BackColor = Color.Blue;
         }
 
         private void password_Leave(object sender, EventArgs e)
         {
-           // password.UseSystemPasswordChar = false;
+           
             panel6.BackColor = Color.Black;
-            if (password.Text =="")
-            {
-                password.Text = "Password";
-
-            }
+            
+           
 
         }
        
@@ -140,6 +152,7 @@ namespace Our_project
             exit.ForeColor = Color.White;
         }
 
+       
     }
     
 }

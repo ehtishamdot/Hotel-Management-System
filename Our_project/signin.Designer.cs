@@ -126,7 +126,7 @@
             this.txt_sign_username.Size = new System.Drawing.Size(259, 19);
             this.txt_sign_username.TabIndex = 14;
             this.txt_sign_username.TabStop = false;
-            this.txt_sign_username.Text = "Username.";
+            this.txt_sign_username.Text = "Username";
             this.txt_sign_username.Click += new System.EventHandler(this.textBox1_Click);
             this.txt_sign_username.Leave += new System.EventHandler(this.txt_sign_username_Leave);
             // 
@@ -157,9 +157,10 @@
             this.txt_sign_password.Size = new System.Drawing.Size(256, 19);
             this.txt_sign_password.TabIndex = 18;
             this.txt_sign_password.TabStop = false;
-            this.txt_sign_password.Text = "Password.";
+            this.txt_sign_password.Text = "Password";
             this.txt_sign_password.Click += new System.EventHandler(this.textBox2_Click);
             this.txt_sign_password.Leave += new System.EventHandler(this.txt_sign_password_Leave);
+            this.txt_sign_password.MouseHover += new System.EventHandler(this.txt_sign_password_MouseHover);
             // 
             // panel7
             // 
@@ -254,7 +255,7 @@
             this.MinimizeBox = false;
             this.Name = "Signin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign In";
+            this.Text = "-";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

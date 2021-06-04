@@ -52,11 +52,16 @@ namespace Our_project
             this.starters = starters;
             this.maincourse = maincourse;
             this.Desserts = Desserts;
-            this.beverages = beverages;           
+            this.beverages = beverages;
+            this.breakfast ="Not Available!";
+            this.lunch = "Not Available!";
+            this.dinner = "Not Available!";
             this.starter_int = starter_int;
             this.maincourse_int = maincourse_int;
             this.desserts_int = desserts_int;
             this.beverages_int = beverages_int;
+            this.lunch_int = "Not Available!";
+            this.dinner_int = "Not Available!";
 
         }
 
@@ -82,7 +87,7 @@ namespace Our_project
             }
             else { starters_price.Text = "0RS"; }
 
-            MessageBox.Show(dish2.Text);
+           
             if (maincourse != "Options:")
             {
                 price2 += 550;
@@ -121,85 +126,106 @@ namespace Our_project
             }
             else { beverages_price.Text = "0RS"; }
 
-            if (breakfast != "Options:")
+            if(breakfast != "Not Available!")
             {
-                price5 += 200;
-                if (breakfast_int != 0)
+                if (breakfast != "Options:")
                 {
-                    price5 *= breakfast_int;
+                    price5 += 200;
+                    if (breakfast_int != 0)
+                    {
+                        price5 *= breakfast_int;
+                    }
+
+                    breakfast_price.Text = price5 + "Rs";
                 }
-                 
-                breakfast_price.Text = price5 + "Rs";
+                else { breakfast_price.Text = "0RS"; }
             }
             else { breakfast_price.Text = "0RS"; }
+            
 
-            if (lunch != "Options:")
+            if (breakfast != "Not Available!")
             {
-                if (lunch_int == "Half")
+                if (lunch != "Options:")
                 {
-                    price6 += 200;
-                    lunch_price.Text = price6 + "Rs";
+                    if (lunch_int == "Half")
+                    {
+                        price6 += 200;
+                        lunch_price.Text = price6 + "Rs";
+                    }
+                    else if (lunch_int == "Full")
+                    {
+                        price6 += 400;
+                        lunch_price.Text = price6 + "Rs";
+                    }
                 }
-                else if (lunch_int == "Full")
-                {
-                    price6 += 400;
-                    lunch_price.Text = price6 + "Rs";
-                }
+                else { lunch_price.Text = "0RS"; }               
             }
             else { lunch_price.Text = "0RS"; }
-
-            if (dinner != "Options:")
+            if (lunch_int == "Not Available!")
             {
-                if (dinner_int == "Half")
-                {
-                    price7 += 200;
-                    dinner_price.Text = price3 + "Rs";
-                }
-                else if (dinner_int == "Full")
-                {
-                    price3 += 400;
-                    dinner_price.Text = price7 + "Rs";
-                }
+                lunch_price.Text = "0RS";
             }
-            else { dinner_price.Text = "0RS"; }
+
+            if (breakfast != "Not Available!")
+            {
+                if (dinner != "Options:")
+                {
+                    if (dinner_int == "Half")
+                    {
+                        price7 += 200;
+                        dinner_price.Text = price3 + "Rs";
+                    }
+                    else if (dinner_int == "Full")
+                    {
+                        price3 += 400;
+                        dinner_price.Text = price7 + "Rs";
+                    }
+                }
+                else { dinner_price.Text = "0RS"; }
+                
+            }
+            if (dinner_int == "Not Available!")
+            {
+                dinner_price.Text = "0RS";
+            }
 
 
             //Quantity qtQ
-            MessageBox.Show(starter_int.ToString());
+
             if (starter_int != 0)
             {
-                starter_qt.Text = starter_int.ToString();
+                starter_qt.Text = "x" + starter_int;
                 starter_qt.Visible = true;
             }
-            MessageBox.Show(maincourse_int.ToString());
+            
             if (maincourse_int != 0)
             {
-                maincourse_qt.Text = maincourse_int +"";
+                maincourse_qt.Text = "x" +maincourse_int ;
                 maincourse_qt.Visible = true;
             }
             if (desserts_int != "Select")
             {
-                desserts_qt.Text = desserts_int + "";
+                desserts_qt.Text = "x" + desserts_int;
                 desserts_qt.Visible = true;
             }
             if (beverages_int != 0)
             {
-                beverages_qt.Text = beverages_int + "";
+                beverages_qt.Text = "x" + beverages_int;
                 beverages_qt.Visible = true;
             }
             if (breakfast_int != 0)
             {
-                breakfast_qt.Text = breakfast_int + "";
+                breakfast_qt.Text = "x" + breakfast_int;
                 breakfast_qt.Visible = true;
             }
             if (lunch_int != "Select")
             {
-                lunch_qt.Text = lunch_int + "";
+                lunch_qt.Text = "x" + lunch_int;
                 lunch_qt.Visible = true;
             }
             if (dinner_int != "Select")
             {
-                dinner_qt.Text = dinner_int + "";
+                dinner_qt.Text = "x" + dinner_int;
                 dinner_qt.Visible = true;
             }
 
