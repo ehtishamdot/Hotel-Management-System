@@ -10,7 +10,27 @@ using System.Windows.Forms;
 namespace Our_project
 {
     public partial class Recipt : Form
-    {  
+    {
+
+
+        //VALUES PASSING FROM MENU
+        string starters;
+        string maincourse;
+        string Desserts;
+        string beverages;
+        string breakfast;
+        string lunch;
+        string dinner;
+        int starter_int;
+        int maincourse_int;
+        string desserts_int;
+        int beverages_int;
+        int breakfast_int;
+        string lunch_int;
+        string dinner_int;
+        int check1;
+        int check2;
+        int check3;
         public Recipt()
         {
             InitializeComponent();
@@ -18,14 +38,37 @@ namespace Our_project
         string userid;
         public Recipt(string userid)
           {
-        this.userid = userid;
+       
           }
 
-        ///DINEIN
-        public Recipt(string starters, string maincourse, string Desserts, string beverages, string breakfast, string lunch,
-            string dinner, int starter_int, int maincourse_int, string desserts_int, int beverages_int, int breakfast_int, string lunch_int, string dinner_int)
+        //TAKEAWAY
+        public Recipt(string starters, string maincourse, string Desserts, string beverages,
+          int starter_int, int maincourse_int, string desserts_int, int beverages_int)
         {
             InitializeComponent();
+            this.starters = starters;
+            this.maincourse = maincourse;
+            this.Desserts = Desserts;
+            this.beverages = beverages;
+            this.breakfast = "Not Available!";
+            this.starter_int = starter_int;
+            this.maincourse_int = maincourse_int;
+            this.desserts_int = desserts_int;
+            this.beverages_int = beverages_int;
+
+        }
+
+
+        ///DINEIN
+        public Recipt(string starters, string maincourse, string Desserts, string beverages, 
+            string breakfast, string lunch,string dinner, int starter_int, int maincourse_int, 
+            string desserts_int, int beverages_int, int breakfast_int, string lunch_int,
+            string dinner_int,int check1,int check2,int check3)
+        {
+            InitializeComponent();
+
+
+            //Dishes
             this.starters = starters;
             this.maincourse = maincourse;
             this.Desserts = Desserts;
@@ -33,6 +76,8 @@ namespace Our_project
             this.breakfast = breakfast;
             this.lunch = lunch;
             this.dinner = dinner;
+
+            //Quantity
             this.starter_int = starter_int;
             this.maincourse_int = maincourse_int;
             this.desserts_int = desserts_int;
@@ -41,45 +86,113 @@ namespace Our_project
             this.lunch_int = lunch_int;
             this.dinner_int = dinner_int;
 
+            //CheckBox
+            this.check1 = check1;
+            this.check2 = check2;
+            this.check3 = check3;
+           
+
         }
 
-        //TAKEAWAY
-
-        public Recipt(string starters, string maincourse, string Desserts, string beverages,
-            int starter_int, int maincourse_int, string desserts_int, int beverages_int)
+      
+        private void reset_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-            this.starters = starters;
-            this.maincourse = maincourse;
-            this.Desserts = Desserts;
-            this.beverages = beverages;
-            this.breakfast ="Not Available!";
-            this.lunch = "Not Available!";
-            this.dinner = "Not Available!";
-            this.starter_int = starter_int;
-            this.maincourse_int = maincourse_int;
-            this.desserts_int = desserts_int;
-            this.beverages_int = beverages_int;
-            this.lunch_int = "Not Available!";
-            this.dinner_int = "Not Available!";
 
+            starters_price.Text = "0RS";
+            maincourse_price.Text = "0RS";
+            dessert_price.Text = "0RS";
+            beverages_price.Text = "0RS";
+            breakfast_price.Text = "0RS";
+            lunch_price.Text = "0RS";
+            dinner_price.Text = "0RS";
+
+            if (dish1.Text != "No item")
+            {
+                dish1.Text = "No item";
+            }
+            if (dish2.Text != "No item")
+            {
+                dish2.Text = "No item";
+            }
+            if (dish3.Text != "No item")
+            {
+                dish3.Text = "No item";
+            }
+            if (dish4.Text != "No item")
+            {
+                dish4.Text = "No item";
+            }
+            if (dish5.Text != "No item")
+            {
+                dish5.Text = "No item";
+            }
+            if (dish6.Text != "No item")
+            {
+                dish6.Text = "No item";
+            }
+            if (dish7.Text != "No item")
+            {
+                dish7.Text = "No item";
+            }
+
+            if (starter_int != 0)
+            {                
+                starter_qt.Visible = false;
+            }
+
+            if (maincourse_int != 0)
+            {              
+                maincourse_qt.Visible = false;
+            }
+            if (desserts_int != "Select")
+            {
+                desserts_qt.Visible = false;
+            }
+            if (beverages_int != 0)
+            {
+                beverages_qt.Visible = false;
+            }
+
+            if (breakfast_int != 0)
+            {
+                breakfast_qt.Visible = false;
+            }
+            if (lunch_int != "Select")
+            {
+                lunch_qt.Visible = false;
+            }
+            if (dinner_int != "Select")
+            {
+                dinner_qt.Visible = false;
+            }
+            if (check1 == 1)
+            {
+                pictureBox1.Visible = false;
+            }
+            if (check2 == 1)
+            {
+                pictureBox2.Visible = false;
+            }
+            if (check3 == 1)
+            {
+                pictureBox3.Visible = false;
+            }
+
+            finalbill.Text = "0Rs";
         }
-
         private void calculate_Click(object sender, EventArgs e)     //for starter
         {
-
-
-           
             int price = 0, price2 = 0, price3 = 0;
-            int price4 = 0, price5 = 0, price6=0 ,price7=0;
+            int price4 = 0, price5 = 0, price6 = 0, price7 = 0;
             int sum;
+
 
             //Price Calculator
 
             if (starters != "Options:")
             {
                 price += 250;
-                if (starter_int!=0)
+                if (starter_int != 0)
                 {
                     price *= starter_int;
                 }               
@@ -126,8 +239,7 @@ namespace Our_project
             }
             else { beverages_price.Text = "0RS"; }
 
-            if(breakfast != "Not Available!")
-            {
+
                 if (breakfast != "Options:")
                 {
                     price5 += 200;
@@ -139,12 +251,7 @@ namespace Our_project
                     breakfast_price.Text = price5 + "Rs";
                 }
                 else { breakfast_price.Text = "0RS"; }
-            }
-            else { breakfast_price.Text = "0RS"; }
-            
-
-            if (breakfast != "Not Available!")
-            {
+       
                 if (lunch != "Options:")
                 {
                     if (lunch_int == "Half")
@@ -159,37 +266,23 @@ namespace Our_project
                     }
                 }
                 else { lunch_price.Text = "0RS"; }               
-            }
-            else { lunch_price.Text = "0RS"; }
-            if (lunch_int == "Not Available!")
-            {
-                lunch_price.Text = "0RS";
-            }
-
-            if (breakfast != "Not Available!")
-            {
+          
+                      
                 if (dinner != "Options:")
                 {
                     if (dinner_int == "Half")
                     {
                         price7 += 200;
-                        dinner_price.Text = price3 + "Rs";
+                        dinner_price.Text = price7 + "Rs";
                     }
                     else if (dinner_int == "Full")
                     {
-                        price3 += 400;
+                        price7 += 400;
                         dinner_price.Text = price7 + "Rs";
                     }
                 }
                 else { dinner_price.Text = "0RS"; }
-                
-            }
-            if (dinner_int == "Not Available!")
-            {
-                dinner_price.Text = "0RS";
-            }
-
-
+            
             //Quantity qtQ
 
             if (starter_int != 0)
@@ -205,7 +298,7 @@ namespace Our_project
             }
             if (desserts_int != "Select")
             {
-                desserts_qt.Text = "x" + desserts_int;
+                desserts_qt.Text = "" + desserts_int;
                 desserts_qt.Visible = true;
             }
             if (beverages_int != 0)
@@ -213,57 +306,43 @@ namespace Our_project
                 beverages_qt.Text = "x" + beverages_int;
                 beverages_qt.Visible = true;
             }
+           
             if (breakfast_int != 0)
             {
                 breakfast_qt.Text = "x" + breakfast_int;
                 breakfast_qt.Visible = true;
             }
+                      
             if (lunch_int != "Select")
             {
-                lunch_qt.Text = "x" + lunch_int;
+                lunch_qt.Text = "" + lunch_int;
                 lunch_qt.Visible = true;
-            }
+            } 
+      //    if (lunch_int != "xNot Available!") { lunch_qt.Visible = false; }
+
+
             if (dinner_int != "Select")
             {
-                dinner_qt.Text = "x" + dinner_int;
+                dinner_qt.Text = "" + dinner_int;
                 dinner_qt.Visible = true;
             }
+       //  if (dinner_int != "xNot Available!") { dinner_qt.Visible = false; }
 
 
+            //Special needs
 
-
-            //final BIll
-            sum = price + price2 + price3 + price4 + price5 + price6 + price7;
-            finalbill.Text = sum.ToString();
-            modepayment.Text = paymentmode.Text;
-            finalbill.Visible = true;
-            paymentmode.Visible = true;
-
-        }
-
- 
-
-        //VALUES PASSING FROM MENU
-        string starters;
-        string maincourse;
-        string Desserts;
-        string beverages;
-        string breakfast;
-        string lunch;
-        string dinner;
-        int starter_int;
-        int maincourse_int;
-        string desserts_int;
-        int beverages_int;
-        int breakfast_int;
-        string lunch_int;
-        string dinner_int;
-
-        //logicID
-        //  string userid;
-        private void reciptbutton_Click_1(object sender, EventArgs e)
-        {
-            
+            if (check1 == 1)
+            {
+                pictureBox1.Visible = true;
+            }
+            if (check2 == 1)
+            {
+                pictureBox2.Visible = true;
+            }
+            if (check3 == 1)
+            {
+                pictureBox3.Visible = true;
+            }
 
             //menu items
 
@@ -271,8 +350,8 @@ namespace Our_project
             dish2.Text = maincourse;
             dish3.Text = Desserts;
             dish4.Text = beverages;
-            dish5.Text = breakfast;
-            dish6.Text = lunch;
+            dish5.Text = lunch;
+            dish6.Text = breakfast;
             dish7.Text = dinner;
             if (dish1.Text == "Options:")
             {
@@ -305,9 +384,27 @@ namespace Our_project
 
 
             //LOGIN ID
-            
-            loginid.Text = userid;
 
+            
+
+            //final BIll
+            sum = price + price2 + price3 + price4 + price5 + price6 + price7;
+            finalbill.Text = sum+"Rs";
+            modepayment.Text = paymentmode.Text;
+            finalbill.Visible = true;
+            paymentmode.Visible = true;
+            loginid.Visible = true;
+
+        }
+
+ 
+
+
+        //logicID
+        //  string userid;
+        private void reciptbutton_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Coming Soon!");
         }
        
 
@@ -403,5 +500,7 @@ namespace Our_project
             v.Show();
             this.Close();
         }
+
+        
     }
 }

@@ -63,14 +63,21 @@ namespace Our_project
 
             starter_value = int.Parse(starter_int.Text);
             maincourse_value = int.Parse(maincourse_int.Text);
-            beverages_value = int.Parse(beverages_int.Text);         
-
-            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text, beverages.Text, 
+            beverages_value = int.Parse(beverages_int.Text);
+            if (starter_value == 0 && maincourse_value == 0 && beverages_value == 0
+               && desserts_int.Text == "Select")
+            {
+                MessageBox.Show("Please Select the Qty!");
+            }
+            else
+            {
+                Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text, beverages.Text,
                   starter_value, maincourse_value, desserts_int.Text, beverages_value);
-            starter.ShowDialog();
+                starter.ShowDialog();
+                this.Close();
+            }
 
-            this.Close();
-       
+
 
         }
 

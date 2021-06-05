@@ -55,20 +55,52 @@ namespace Our_project
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            int check1=0,check2=0,check3=0;
+            
+            if(checkBox1.Checked == true)
+            {
+                check1 = 1;
+            }
+            if(checkBox2.Checked == true)
+            {
+                check2 = 1;
+            }
+            if(checkBox3.Checked == true)
+            {
+                check3 = 1;
+            }
+
+
+
             int starter_value;
             int maincourse_value;
             int beverages_value;
-            int breakfast_value ;
-            
+            int breakfast_value;
+
 
             starter_value = int.Parse(starter_int.Text);
             maincourse_value = int.Parse(maincourse_int.Text);
             beverages_value = int.Parse(beverages_int.Text);
-            breakfast_value = int.Parse(breakfast_int.Text);          
-          
-            Recipt starter = new Recipt(starters.Text, maincourse.Text, Desserts.Text,beverages.Text,breakfast.Text,
-                lunch.Text,dinner.Text, starter_value, maincourse_value,desserts_int.Text, beverages_value, breakfast_value, lunch_int.Text,dinner_int.Text);
-            starter.ShowDialog();
+            breakfast_value = int.Parse(breakfast_int.Text);
+
+            if (starter_value == 0 && maincourse_value == 0 && beverages_value == 0 && breakfast_value == 0
+                && desserts_int.Text == "Select" && lunch_int.Text == "Select" && dinner_int.Text == "Select")
+            {
+                MessageBox.Show("Please Select the Qty!");
+            }
+            else
+            {
+                
+                Recipt starter = new Recipt(starters.Text, maincourse.Text,
+                    Desserts.Text, beverages.Text, breakfast.Text,
+                   lunch.Text, dinner.Text, starter_value, maincourse_value,
+                   desserts_int.Text, beverages_value, breakfast_value,
+                   lunch_int.Text, dinner_int.Text,check1,check2,check3);
+                starter.ShowDialog();
+                 this.Close();
+
+            }
+            
 
         }
 

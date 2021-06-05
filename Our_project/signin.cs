@@ -22,20 +22,20 @@ namespace Our_project
         private void Sign_Click(object sender, EventArgs e)
         {
             
-            Login login = new Login(txt_sign_username.Text,txt_sign_password.Text);
+            Login login = new Login(txt_sign_username.Text, txt_sign_password.Text);
             login.Show();
-            this.Visible = false;
+           this.Visible = false;
            Recipt loginid = new Recipt(txt_sign_username.Text);
 
 
         }
         private void textBox1_Click(object sender, EventArgs e)
         {
-            if(txt_sign_username.Text == "Username")
+            if (txt_sign_username.Text == "Username")
             {
                 txt_sign_username.Clear();
             }
-            
+
             panel1.BackColor = Color.Blue;
         }
 
@@ -49,20 +49,10 @@ namespace Our_project
 
         }
 
-        private void textBox2_Click(object sender, EventArgs e)
-        {
-           
-            if (txt_sign_password.Text == "Password")
-            {
-                txt_sign_password.Clear();             
-            }
-           
-                    
-            panel2.BackColor = Color.Blue;
-            panel2.ForeColor = Color.Blue;
-        }
+       
         private void txt_sign_password_MouseHover(object sender, EventArgs e)
-        {
+        {    
+            
             if (txt_sign_password.Text == "Password")
             {
                 txt_sign_password.Text = "Password";
@@ -72,6 +62,7 @@ namespace Our_project
                 txt_sign_password.UseSystemPasswordChar = true;
             }
         }
+        
         private void txt_sign_password_Leave(object sender, EventArgs e)
         {
             panel2.BackColor = Color.Black;
@@ -81,7 +72,18 @@ namespace Our_project
             }               
         
         }
+        private void textBox2_Click(object sender, EventArgs e)
+        {
 
+            if (txt_sign_password.Text == "Password")
+            {
+                //txt_sign_password.Clear();
+            }
+
+
+            panel2.BackColor = Color.Blue;
+            panel2.ForeColor = Color.Blue;
+        }
         private void textBox3_Click(object sender, EventArgs e)
         {
 
