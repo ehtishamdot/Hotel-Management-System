@@ -77,7 +77,7 @@ namespace Our_project
 
             if (txt_sign_password.Text == "Password")
             {
-                //txt_sign_password.Clear();
+                txt_sign_password.Clear();
             }
 
 
